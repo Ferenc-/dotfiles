@@ -24,7 +24,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-"let g:clang_user_options='|| exit 0'
 
 map <F3> :YcmCompleter GoToDefinition <CR>
 map <F4> :tabedit ~/.vimrc <CR>
