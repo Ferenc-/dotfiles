@@ -14,6 +14,7 @@ Bundle 'Syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'majutsushi/tagbar'
 Bundle 'bling/vim-airline'
+Bundle 'scrooloose/nerdtree'
 
 " non-GitHub repos
 "Bundle 'git://git.wincent.com/command-t.git'
