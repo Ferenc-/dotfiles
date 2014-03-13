@@ -55,8 +55,6 @@ map <C-a> <Home>
 map <C-p> <Up>
 map <C-n> <Down>
 
-let g:Tlist_Sort_Type = "name"
-
 
 colors calmar256-dark
 " ~/.vimrc ends here
