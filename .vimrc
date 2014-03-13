@@ -4,6 +4,7 @@ source ~/.vim/config/vundle.vim
 source ~/.vim/config/syntastic.vim
 source ~/.vim/config/youcompletme.vim
 source ~/.vim/config/tagbar.vim
+source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/vim-airline.vim
 
 set number
@@ -27,8 +28,8 @@ set expandtab
 
 map <F3> :YcmCompleter GoToDefinition <CR>
 map <F4> :tabedit ~/.vimrc <CR>
-map <F9> :TagbarToggle<CR> :NERDTreeToggle<CR>
-map <F10> :TagbarToggle<CR> 
+map <F9> :TagbarToggle<CR>:NERDTreeToggle<CR>
+map <F10> :TagbarToggle<CR>
 map <F11> :NERDTreeToggle<CR>
 
 map <C-S-tab> :tabprevious<CR>
@@ -36,7 +37,7 @@ map <C-tab> :tabnext<CR>
 map <C-t> :tabnew<CR>
 
 
-imap <C-d> <Del> 
+imap <C-d> <Del>
 imap <C-h> <BS>
 imap <C-b> <Left>
 imap <C-f> <Right>
@@ -45,7 +46,7 @@ imap <C-e> <End>
 imap <C-p> <Up>
 imap <C-n> <Down>
 imap <C-m> <Enter>
-"map <C-d> <Del> 
+"map <C-d> <Del>
 map <C-h> <BS>
 map <C-b> <Left>
 map <C-f> <Right>
