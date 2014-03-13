@@ -27,10 +27,9 @@ set expandtab
 
 map <F3> :YcmCompleter GoToDefinition <CR>
 map <F4> :tabedit ~/.vimrc <CR>
-"map <F8> :TrinityToggleAll<CR> 
-"map <F9> :TrinityToggleSourceExplorer<CR> 
+map <F9> :TagbarToggle<CR> :NERDTreeToggle<CR>
 map <F10> :TagbarToggle<CR> 
-"map <F11> :TrinityToggleNERDTree<CR>
+map <F11> :NERDTreeToggle<CR>
 
 map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>
