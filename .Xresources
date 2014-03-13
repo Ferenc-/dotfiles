@@ -57,7 +57,7 @@ URxvt.perl-ext-common: tabbed,keyboard-select,fullscreen
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 ! URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keysym.M-s: perl:keyboard-select:activate
-URxvt.keysym.F11: perl:fullscreen:switch
+URxvt.keysym.M-F11: perl:fullscreen:switch
 
 !! xterm config
 XTerm*background: gray0
