@@ -30,10 +30,10 @@ URxvt*geometry:		84x24
 URxvt*font: xft:Source Code Pro for Powerline:semi-bold:size=10
 
 !! This only makes sense if you enable tabbed extension
-URxvt.tabbed.tabbar-fg: 2
-URxvt.tabbed.tabbar-bg: #000000
-URxvt.tabbed.tab-fg:    #000000
-URxvt.tabbed.tab-bg:    2
+! URxvt.tabbed.tabbar-fg: 2
+! URxvt.tabbed.tabbar-bg: #000000
+! URxvt.tabbed.tab-fg:    #000000
+! URxvt.tabbed.tab-bg:    2
 
 
  URxvt*color0:      #000000
@@ -53,7 +53,8 @@ URxvt.tabbed.tab-bg:    2
 ! URxvt*color14:     #50FCF8
 ! URxvt*color15:     #F8FCF8
 
-URxvt.perl-ext-common: tabbed,keyboard-select,fullscreen
+! URxvt.perl-ext-common: tabbed,keyboard-select,fullscreen
+URxvt.perl-ext-common: keyboard-select,fullscreen
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 ! URxvt.keysym.M-s: perl:keyboard-select:search
 URxvt.keysym.M-s: perl:keyboard-select:activate
