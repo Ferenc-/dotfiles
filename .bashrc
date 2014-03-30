@@ -47,4 +47,8 @@ export PATH="$PATH:/mnt/backup/Devel/Scala/sbt/bin"
 #fi
 
 
-test -s ~/.alias && . ~/.alias || true
+#test -s ~/.alias && . ~/.alias || true
+
+alias tmux='tmux -2 -u'
+alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
+
