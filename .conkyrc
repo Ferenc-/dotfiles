@@ -87,15 +87,17 @@ ${color lightgrey}Kernel: ${color}$kernel
 
 ${color lightgrey}___________________ CPU ___________________
 
-${color lightgrey}Temp: ${exec sensors|grep 'id 0'|awk '{print $4}'} ${alignr}${offset -35}${color lightgrey}Load: ${cpu}${color lightgrey}%
-
 ${color lightgrey}Core 0 ${alignr}${offset -35}${color lightgrey}Frequency:${color }${freq 1} ${color lightgrey}Mhz
+${color lightgrey}Temp: ${exec sensors | awk '{if($0~"Core 0"){print $3}}'} ${alignr}${offset -35}${color lightgrey}Load: ${cpu cpu0}${color lightgrey}%
 ${color lightgrey}${cpugraph cpu0 32,309 000000 $color}
 ${color lightgrey}Core 1 ${alignr}${offset -35}${color lightgrey}Frequency:${color }${freq 2} ${color lightgrey}Mhz
+${color lightgrey}Temp: ${exec sensors | awk '{if($0~"Core 1"){print $3}}'} ${alignr}${offset -35}${color lightgrey}Load: ${cpu cpu1}${color lightgrey}%
 ${color lightgrey}${cpugraph cpu1 32,309 000000 $color}
 ${color lightgrey}Core 2 ${alignr}${offset -35}${color lightgrey}Frequency:${color }${freq 3} ${color lightgrey}Mhz
+${color lightgrey}Temp: ${exec sensors | awk '{if($0~"Core 2"){print $3}}'} ${alignr}${offset -35}${color lightgrey}Load: ${cpu cpu2}${color lightgrey}%
 ${color lightgrey}${cpugraph cpu2 32,309 000000 $color}
 ${color lightgrey}Core 3 ${alignr}${offset -35}${color lightgrey}Frequency:${color }${freq 4} ${color lightgrey}Mhz
+${color lightgrey}Temp: ${exec sensors | awk '{if($0~"Core 3"){print $3}}'} ${alignr}${offset -35}${color lightgrey}Load: ${cpu cpu3}${color lightgrey}%
 ${color lightgrey}${cpugraph cpu3 32,309 000000 $color}
 
 ${color lightgrey}__________________ Memory __________________
