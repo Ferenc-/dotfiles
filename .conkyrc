@@ -114,8 +114,8 @@ ${color lightgrey}Tot: ${color}${totalup eth0} ${alignr}${offset -35}${color lig
 ${color lightgrey}_______________ File Systems _______________
  
 /           $color${fs_used_perc /}% ${color lightgrey} ${fs_bar /}
-/home        $color${fs_used_perc /home}% ${color lightgrey} ${fs_bar /home}
-/mnt/backup $color${fs_used_perc /mnt/backup}% ${color lightgrey} ${fs_bar /mnt/backup}
+/home       $color${fs_used_perc /home}% ${color lightgrey} ${fs_bar /home}
+/mnt        $color${fs_used_perc /mnt}% ${color lightgrey} ${fs_bar /mnt}
 /boot       $color${fs_used_perc /boot}% ${color lightgrey} ${fs_bar /boot}
 
 ${color lightgrey}________________ Processes _________________
