@@ -8,6 +8,9 @@ source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/vim-airline.vim
 
 set number
+"smartcase only goes with ignorecase together
+set ignorecase
+set smartcase 
 set t_Co=256
 "set guifont=Monospace\ 10
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Semi-Bold\ 10
@@ -19,7 +22,8 @@ set foldcolumn=5
 set foldlevel=6
 set foldopen=insert
 
-"To change all the existing tab characters to match the current tab settings, use:
+"To change all the existing tab characters 
+"to match the current tab settings, use:
 ":retab
 set tabstop=4
 set shiftwidth=4
