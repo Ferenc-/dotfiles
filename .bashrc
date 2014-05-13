@@ -30,6 +30,12 @@
 export PATH="$PATH:/mnt/backup/Devel/Scala/sbt/bin"
 #export PATH="/home/ferenc/Komodo-IDE-7/bin:$PATH"
 
+#For common bash history between sessions
+#Append instead of overwrite && auto append after every enter
+#shopt -s histappend
+#PROMPT_COMMAND='history -a'
+#export HISTSIZE=10000
+
 
 #if [ $TERM == 'xterm' ]
 #then
