@@ -36,6 +36,12 @@ export PATH="$PATH:/mnt/backup/Devel/Scala/sbt/bin"
 #PROMPT_COMMAND='history -a'
 #export HISTSIZE=10000
 
+# Turn off history for less
+export LESSHISTFILE=-
+export LESSHISTSIZE=0
+# System default is: LESS=-M -I -R
+export LESS="$LESS -N"
+
 
 #if [ $TERM == 'xterm' ]
 #then
