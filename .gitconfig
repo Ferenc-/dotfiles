@@ -1,4 +1,18 @@
-
+[user]
+    email = ferenc.gm@gmail.com
+    name = Ferenc-
+[push]
+    default = tracking
+[merge]
+    tool = vimdiff
+    conflictstyle = diff3
+[mergetool]
+    prompt = false
+    keepBackup = false
+[core]
+    preloadindex = true
+[color]
+    ui = true
 [alias]
 	lol = log --graph --decorate --oneline
 [diff]
