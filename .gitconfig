@@ -14,10 +14,10 @@
 [color]
     ui = true
 [alias]
-	lol = log --graph --decorate --oneline
+    lol = log --graph --decorate --oneline
 [diff]
-	tool = vimdiff
+    tool = vimdiff
 [difftool]
-	prompt = false
+    prompt = false
 [http]
-	sslVerify = true
+    sslVerify = true
