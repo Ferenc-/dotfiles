@@ -42,6 +42,8 @@ export LESSHISTSIZE=0
 # System default is: LESS=-M -I -R
 export LESS="$LESS -N"
 
+# Makes 'man 1 man' work again
+export MAN_POSIXLY_CORRECT=1
 
 #if [ $TERM == 'xterm' ]
 #then
