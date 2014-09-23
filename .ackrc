@@ -1,0 +1,8 @@
+# Use case-insensitive less as the pager. -r is so we get color escape codes
+--pager=less -ix4SRFX
+# Always use color
+--color
+# Case-insensitive if query is lower case, otherwise it's case sensitive
+--smart-case
+# Show context of search hit
+--context
