@@ -16,6 +16,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
+Bundle 'derekwyatt/vim-scala'
 
 " non-GitHub repos
 "Bundle 'git://git.wincent.com/command-t.git'
