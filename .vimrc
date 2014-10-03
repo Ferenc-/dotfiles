@@ -14,6 +14,7 @@ set ignorecase
 set smartcase
 set incsearch
 set hlsearch
+"Use ':noh' to clear highlights
 
 set t_Co=256
 "set guifont=Monospace\ 10
@@ -26,13 +27,11 @@ set foldcolumn=5
 set foldlevel=6
 set foldopen=insert
 
-"To change all the existing tab characters
-"to match the current tab settings, use:
-":retab
+"Use ':retab' to change all existing tab characters to the current tab settings
 set tabstop=4
 set shiftwidth=4
 set expandtab
-
+"Use ':%s/\s\+$' To get rid of trailing whitespaces
 
 map <F3> :YcmCompleter GoToDefinition <CR>
 map <F4> :tabedit ~/.vimrc <CR>
