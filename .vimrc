@@ -13,6 +13,7 @@ set number
 set ignorecase
 set smartcase
 set incsearch
+set hlsearch
 
 set t_Co=256
 "set guifont=Monospace\ 10
