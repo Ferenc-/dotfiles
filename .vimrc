@@ -33,6 +33,13 @@ set shiftwidth=4
 set expandtab
 "Use ':%s/\s\+$' To get rid of trailing whitespaces
 
+nnoremap d "_d
+vnoremap d "_d
+nnoremap dw "_dw
+vnoremap dw "_dw
+nnoremap dd "_dd
+vnoremap dd "_dd
+
 map <F3> :YcmCompleter GoToDefinition <CR>
 map <F4> :tabedit ~/.vimrc <CR>
 map <F9> :TagbarToggle<CR>:NERDTreeToggle<CR>
