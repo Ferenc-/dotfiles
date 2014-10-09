@@ -1,0 +1,26 @@
+:set as=long
+:set winsplit=top_big
+:map <esc> i<space>
+:map <tab> i<space>
+:map r :run<CR>
+:map c :continue<CR>
+:map f :finish<CR>
+:map n :next<CR>
+:map s :step<CR>
+:map u :up<CR>
+:map d :down<CR>
+:highlight Type                 cterm=bold      ctermfg=LightGreen
+:highlight Constant             cterm=normal    ctermfg=DarkYellow
+:highlight PreProc              cterm=normal    ctermfg=DarkMagenta
+:highlight Comment              cterm=normal    ctermfg=LightBlue
+:highlight Statement            cterm=normal    ctermfg=DarkGreenYellow
+:highlight Normal               cterm=normal    ctermfg=DarkGreen
+
+:highlight StatusLine           cterm=normal        ctermbg=White     ctermfg=Black
+:highlight IncSearch            cterm=normal        ctermbg=Yellow   ctermfg=Black
+#:highlight Arrow                cterm=bold,reverse                   ctermfg=Black
+#:highlight LineHighlight        cterm=bold                           ctermfg=Black
+:highlight Breakpoint           cterm=bold          ctermbg=Red      ctermfg=White
+:highlight DisabledBreakpoint   cterm=normal        ctermbg=Red      ctermfg=White
+:highlight SelectedLineNr        cterm=reverse       ctermfg=Yellow   ctermbg=Black
+#:highlight Logo                 cterm=normal                         ctermfg=Black
