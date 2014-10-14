@@ -32,8 +32,8 @@ own_window_transparent yes
 double_buffer yes
 
 
-# Minimum size of text area
-minimum_width 800
+# Minimum size of text area [width (height)]
+minimum_size 200
 
 # Draw shades?
 draw_shades yes
@@ -48,7 +48,7 @@ draw_borders no
 stippled_borders 8
 
 # border margins
-border_margin 4
+border_outer_margin 4
 
 # border width
 border_width 1
@@ -69,7 +69,7 @@ gap_x 7
 gap_y -7
 
 # Add spaces to keep things from moving about?  This only affects certain objects.
-use_spacer no
+use_spacer none
 
 # Subtract file system buffers from used memory?
 no_buffers yes
@@ -82,7 +82,7 @@ TEXT
 
 ${color lightgrey}___________________ Host __________________
 
-${color lightgrey}Name: ${color}$nodename  ${alignr}${offset -35}${color lightgrey}Uptime: ${color}$uptime 
+${color lightgrey}Name: ${color}$nodename  ${alignr}${offset -35}${color lightgrey}Uptime: ${color}$uptime
 ${color lightgrey}Kernel: ${color}$kernel
 
 ${color lightgrey}___________________ CPU ___________________
@@ -112,7 +112,7 @@ ${color lightgrey}${upspeedgraph eth0 32,150 000000 $color} ${color lightgrey}${
 ${color lightgrey}Tot: ${color}${totalup eth0} ${alignr}${offset -35}${color lightgrey}Tot:${color} ${totaldown eth0}
 
 ${color lightgrey}_______________ File Systems _______________
- 
+
 /           $color${fs_used_perc /}% ${color lightgrey} ${fs_bar /}
 /home       $color${fs_used_perc /home}% ${color lightgrey} ${fs_bar /home}
 /mnt        $color${fs_used_perc /mnt}% ${color lightgrey} ${fs_bar /mnt}
