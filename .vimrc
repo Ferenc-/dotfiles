@@ -1,4 +1,4 @@
-
+"Use ':so ~/.vimrc' to reload
 
 source ~/.vim/config/vundle.vim
 source ~/.vim/config/syntastic.vim
