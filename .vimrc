@@ -74,4 +74,9 @@ map <C-n> <Down>
 
 
 colors calmar256-dark
+hi clear CursorLine
+hi CursorLineNR cterm=BOLD ctermfg=28 
+"ctermbg=234 
+set cursorline
+
 " ~/.vimrc ends here
