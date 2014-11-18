@@ -56,3 +56,6 @@ export MAN_POSIXLY_CORRECT=1
 alias tmux='tmux -2 -u'
 alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
 
+# Set core file size limit to unlimited
+# This should be handled by /etc/security/limits.conf
+ulimit -c unlimited
