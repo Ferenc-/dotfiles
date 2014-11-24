@@ -46,8 +46,8 @@ map <F9> :TagbarToggle<CR>:NERDTreeToggle<CR>
 map <F10> :TagbarToggle<CR>
 map <F11> :NERDTreeToggle<CR>
 
-map <C-K> :pyf /usr/share/clang/clang-format.py<CR>
-imap <C-K> <ESC>:pyf /usr/share/clang/clang-format.py<CR>i
+map <C-K> :ClangFormat<CR>
+imap <C-K> <ESC>:ClangFormat<CR>i
 
 map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>
