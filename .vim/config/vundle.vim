@@ -12,6 +12,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'Syntastic'
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'rhysd/vim-clang-format'
 Bundle 'majutsushi/tagbar'
 Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
