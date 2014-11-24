@@ -7,6 +7,7 @@ source ~/.vim/config/tagbar.vim
 source ~/.vim/config/nerdtree.vim
 source ~/.vim/config/vim-airline.vim
 
+syntax on
 set number
 
 "smartcase only goes with ignorecase together
