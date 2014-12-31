@@ -115,8 +115,8 @@ ${color lightgrey}_______________ File Systems _______________
 
 /           $color${fs_used_perc /}% ${color lightgrey} ${fs_bar /}
 /home       $color${fs_used_perc /home}% ${color lightgrey} ${fs_bar /home}
-/mnt        $color${fs_used_perc /mnt}% ${color lightgrey} ${fs_bar /mnt}
-/boot       $color${fs_used_perc /boot}% ${color lightgrey} ${fs_bar /boot}
+/mnt/home   $color${fs_used_perc /mnt/home}% ${color lightgrey} ${fs_bar /mnt/home}
+/mnt/backup $color${fs_used_perc /mnt/backup}% ${color lightgrey} ${fs_bar /mnt/backup}
 
 ${color lightgrey}________________ Processes _________________
 
