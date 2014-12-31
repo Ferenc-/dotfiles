@@ -102,7 +102,8 @@ ${color lightgrey}${cpugraph cpu3 32,309 000000 $color}
 
 ${color lightgrey}__________________ Memory __________________
 
-${color lightgrey}RAM:$color $mem / $memmax${color lightgrey} ${alignr}${offset -15}Swap:$color $swap / $swapmax${voffset 2}
+${color lightgrey}RAM:$color ${alignr}$mem / $memmax
+${color lightgrey}Swap:$color ${alignr}$swap / $swapmax
 
 ${color lightgrey}__________________ Network _________________
 
