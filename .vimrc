@@ -21,7 +21,7 @@ set t_Co=256
 "set guifont=Monospace\ 10
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Semi-Bold\ 10
 set winaltkeys=no
-
+set noswapfile
 
 set foldmethod=indent
 set foldcolumn=5
