@@ -1,4 +1,7 @@
 "Use ':so ~/.vimrc' to reload
+command! ReloadVimRc :so ~/.vimrc
+"Use ':%s/\s\+$' To get rid of trailing whitespaces
+command! RemoveTrailingWhitespaces :%s/\s\+$
 
 source ~/.vim/config/vundle.vim
 source ~/.vim/config/syntastic.vim
@@ -32,7 +35,6 @@ set foldopen=insert
 set tabstop=4
 set shiftwidth=4
 set expandtab
-"Use ':%s/\s\+$' To get rid of trailing whitespaces
 
 nnoremap d "_d
 vnoremap d "_d
