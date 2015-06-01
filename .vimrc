@@ -52,6 +52,8 @@ map <F11> :NERDTreeToggle<CR>
 map <C-K> :ClangFormat<CR>
 imap <C-K> <ESC>:ClangFormat<CR>i
 
+map ,st :%!scalariform -f -q -p=/home/ferenc/.scalariform.properties --stdin --stdout<CR>
+
 map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>
 map <C-t> :tabnew<CR>
