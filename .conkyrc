@@ -107,10 +107,10 @@ ${color lightgrey}Swap:$color ${alignr}$swap / $swapmax
 
 ${color lightgrey}__________________ Network _________________
 
-${color lightgrey}Address:${color} ${addr eth0}${offset 6}
-${color lightgrey}Up:${color} ${upspeedf eth0} ${color lightgrey}k ${alignr}${offset -35}${color lightgrey}Down:${color} ${downspeedf eth0} ${color lightgrey}k
-${color lightgrey}${upspeedgraph eth0 32,150 000000 $color} ${color lightgrey}${downspeedgraph eth0 32,150 000000 $color}
-${color lightgrey}Tot: ${color}${totalup eth0} ${alignr}${offset -35}${color lightgrey}Tot:${color} ${totaldown eth0}
+${color lightgrey}Address:${color} ${addr enp0s25}${offset 6}
+${color lightgrey}Up:${color} ${upspeedf enp0s25} ${color lightgrey}k ${alignr}${offset -35}${color lightgrey}Down:${color} ${downspeedf enp0s25} ${color lightgrey}k
+${color lightgrey}${upspeedgraph enp0s25 32,150 000000 $color} ${color lightgrey}${downspeedgraph enp0s25 32,150 000000 $color}
+${color lightgrey}Tot: ${color}${totalup enp0s25} ${alignr}${offset -35}${color lightgrey}Tot:${color} ${totaldown enp0s25}
 
 ${color lightgrey}_______________ File Systems _______________
 
