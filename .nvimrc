@@ -1,3 +1,5 @@
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
 "Use ':so ~/.nvimrc' to reload
 command! ReloadVimRc :so ~/.nvimrc
 "Use ':%s/\s\+$' To get rid of trailing whitespaces
@@ -20,7 +22,6 @@ set incsearch
 set hlsearch
 "Use ':noh' to clear highlights
 
-set t_Co=256
 "set guifont=Monospace\ 10
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Semi-Bold\ 10
 set winaltkeys=no
@@ -78,7 +79,8 @@ map <C-p> <Up>
 map <C-n> <Down>
 
 
-colors calmar256-dark
+"colors calmar256-dark
+colors vydark
 hi clear CursorLine
 hi CursorLineNR cterm=BOLD ctermfg=28
 "ctermbg=234
