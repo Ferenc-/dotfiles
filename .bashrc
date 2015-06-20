@@ -64,10 +64,10 @@ setupPrebuiltClang()
 {
     mkdir -p /tmp/prebuild
     pushd /tmp/prebuild
-    wget http://llvm.org/releases/3.6.0/clang+llvm-3.6.0-x86_64-opensuse13.2.tar.xz
-    tar -xf clang+llvm-3.6.0-x86_64-opensuse13.2.tar.xz
-    export LD_LIBRARY_PATH=/tmp/prebuilt/clang+llvm-3.6.0-x86_64-opensuse13.2/lib
-    export PATH=/tmp/prebuild/clang+llvm-3.6.0-x86_64-opensuse13.2/bin/:$PATH
-    alias clang++='clang++ -isystem=/tmp/prebuild/clang+llvm-3.6.0-x86_64-opensuse13.2/include -stdlib=libc++ -std=c++14'
+    wget http://llvm.org/releases/3.6.1/clang+llvm-3.6.1-x86_64-opensuse13.2.tar.xz
+    tar -xf clang+llvm-3.6.1-x86_64-opensuse13.2.tar.xz
+    export LD_LIBRARY_PATH=/tmp/prebuilt/clang+llvm-3.6.1-x86_64-opensuse13.2/lib
+    export PATH=/tmp/prebuild/clang+llvm-3.6.1-x86_64-opensuse13.2/bin/:$PATH
+    alias clang++='clang++ -isystem=/tmp/prebuild/clang+llvm-3.6.1-x86_64-opensuse13.2/include -stdlib=libc++ -std=c++14'
     popd
 }
