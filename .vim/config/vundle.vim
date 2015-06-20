@@ -18,6 +18,7 @@ Bundle 'bling/vim-airline'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'shiracamus/vim-syntax-x86-objdump-d'
 
 " non-GitHub repos
 "Bundle 'git://git.wincent.com/command-t.git'
