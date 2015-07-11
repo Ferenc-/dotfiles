@@ -64,6 +64,7 @@ export PKG_CONFIG_PATH=/home/ferenc/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PAT
 
 alias tmux='tmux -2 -u'
 alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
+alias mpv-motion_compensated='mpv --vf vapoursynth=~/.mpv/filters/mvtools.vpy'
 
 # Set core file size limit to unlimited
 # This should be handled by /etc/security/limits.conf
