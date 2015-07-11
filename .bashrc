@@ -45,7 +45,9 @@ export LESS="$LESS -N"
 # Makes 'man 1 man' work again
 export MAN_POSIXLY_CORRECT=1
 
-# Compile and link against home local vapoursynth library 
+# Compile and link against home local vapoursynth library
+export PATH=/home/ferenc/vapoursynth/bin:$PATH
+export PYTHONPATH=/home/ferenc/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
 export LD_LIBRARY_PATH=/home/ferenc/vapoursynth/lib64/:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=/home/ferenc/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
 
