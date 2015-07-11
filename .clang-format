@@ -1,3 +1,4 @@
+# vim: set ft=yaml:
 Language:        Cpp
 # BasedOnStyle:  LLVM
 AccessModifierOffset: -2
@@ -15,7 +16,7 @@ BreakBeforeBinaryOperators: false
 BreakBeforeTernaryOperators: true
 BreakConstructorInitializersBeforeComma: false
 BinPackParameters: true
-ColumnLimit:     100
+ColumnLimit:     80
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 DerivePointerAlignment: false
 ExperimentalAutoDetectBinPacking: false
