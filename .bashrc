@@ -45,7 +45,9 @@ export LESS="$LESS -N"
 # Makes 'man 1 man' work again
 export MAN_POSIXLY_CORRECT=1
 
-# Compile and link against home local vapoursynth library
+# Use, compile and link against home local vapoursynth library
+# Howto http://www.sargo.es/2015/03/vapoursynth-installation-on-debian-or.html
+# Test Case: '$ vspipe -v'
 export PATH=/home/ferenc/vapoursynth/bin:$PATH
 export PYTHONPATH=/home/ferenc/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
 export LD_LIBRARY_PATH=/home/ferenc/vapoursynth/lib64/:$LD_LIBRARY_PATH
