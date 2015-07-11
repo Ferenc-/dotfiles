@@ -45,6 +45,11 @@ export LESS="$LESS -N"
 # Makes 'man 1 man' work again
 export MAN_POSIXLY_CORRECT=1
 
+# Compile and link against home local vapoursynth library 
+export LD_LIBRARY_PATH=/home/ferenc/vapoursynth/lib64/:$LD_LIBRARY_PATH
+export PKG_CONFIG_PATH=/home/ferenc/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
+
+
 #if [ $TERM == 'xterm' ]
 #then
 
@@ -66,7 +71,7 @@ setupPrebuiltClang()
     pushd /tmp/prebuild
     wget http://llvm.org/releases/3.6.1/clang+llvm-3.6.1-x86_64-opensuse13.2.tar.xz
     tar -xf clang+llvm-3.6.1-x86_64-opensuse13.2.tar.xz
-    export LD_LIBRARY_PATH=/tmp/prebuilt/clang+llvm-3.6.1-x86_64-opensuse13.2/lib
+    export LD_LIBRARY_PATH=/tmp/prebuilt/clang+llvm-3.6.1-x86_64-opensuse13.2/lib:$LD_LIBRARY_PATH
     export PATH=/tmp/prebuild/clang+llvm-3.6.1-x86_64-opensuse13.2/bin/:$PATH
     alias clang++='clang++ -isystem=/tmp/prebuild/clang+llvm-3.6.1-x86_64-opensuse13.2/include -stdlib=libc++ -std=c++14'
     popd
