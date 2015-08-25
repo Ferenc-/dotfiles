@@ -63,6 +63,7 @@ export PKG_CONFIG_PATH=/home/ferenc/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PAT
 #test -s ~/.alias && . ~/.alias || true
 
 alias tmux='tmux -2 -u'
+alias ag='ag --context --smart-case --color --pager="less -ix4SRFX"' 
 alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
 alias mpv-motion_compensated='mpv --vf vapoursynth=~/.mpv/filters/mvtools.vpy'
 
