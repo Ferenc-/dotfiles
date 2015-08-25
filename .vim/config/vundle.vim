@@ -19,6 +19,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'tpope/vim-fugitive'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'shiracamus/vim-syntax-x86-objdump-d'
+Bundle 'vim-scripts/AnsiEsc.vim'
 
 " non-GitHub repos
 "Bundle 'git://git.wincent.com/command-t.git'
