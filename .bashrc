@@ -66,6 +66,7 @@ alias tmux='tmux -2 -u'
 alias ag='ag --context --smart-case --color --pager="less -ix4SRFX"' 
 alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
 alias mpv-motion_compensated='mpv --vf vapoursynth=~/.mpv/filters/mvtools.vpy'
+alias man='man -P most'
 
 # Set core file size limit to unlimited
 # This should be handled by /etc/security/limits.conf
