@@ -1,7 +1,11 @@
-"Use ':so ~/.vimrc' to reload
+"Use this command to reload vimrc
 command! ReloadVimRc :so ~/.vimrc
-"Use ':%s/\s\+$' To get rid of trailing whitespaces
+"Use this command to get rid of trailing whitespaces
 command! RemoveTrailingWhitespaces :%s/\s\+$
+"Use this command to make a hexdump from buffer content
+command! AsciiToHex :%!xxd
+"Use this command to make a reverse hexdump from buffer content
+command! HexToAscii :%!xxd -r
 
 source ~/.vim/config/vundle.vim
 source ~/.vim/config/syntastic.vim
@@ -84,4 +88,5 @@ hi CursorLineNR cterm=BOLD ctermfg=28
 "ctermbg=234
 set cursorline
 
+set shell=/bin/bash
 " ~/.vimrc ends here
