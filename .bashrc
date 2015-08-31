@@ -83,3 +83,13 @@ setupPrebuiltClang()
     alias clang++='clang++ -isystem=/tmp/prebuild/clang+llvm-3.6.1-x86_64-opensuse13.2/include -stdlib=libc++ -std=c++14'
     popd
 }
+
+isLocalTCPportOpen()
+{   
+    [[ ! "$1" =~ ^([0-9])+$ ]] &&
+    {   
+        echo -e "Usage:\n ${0##*/} <TCP port number>" 
+        return -1
+    }
+    (: </dev/tcp/127.0.0.1/${1}) &>/dev/null && echo "OPEN" || echo "CLOSED"
+}
