@@ -20,6 +20,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'shiracamus/vim-syntax-x86-objdump-d'
 Bundle 'vim-scripts/AnsiEsc.vim'
+Bundle 'rking/ag.vim'
 
 " non-GitHub repos
 "Bundle 'git://git.wincent.com/command-t.git'
