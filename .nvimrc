@@ -87,6 +87,9 @@ vmap <unique> <down>  <Plug>SchleppDown
 vmap <unique> <left>  <Plug>SchleppLeft
 vmap <unique> <right> <Plug>SchleppRight
 
+"This maps <C-w><ESC> to exit terminal mode.
+tnoremap <C-w><ESC> <C-\><C-n>
+
 "colors calmar256-dark
 colors vydark
 hi clear CursorLine
