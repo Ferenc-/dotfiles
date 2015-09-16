@@ -48,10 +48,10 @@ export MAN_POSIXLY_CORRECT=1
 # Use, compile and link against home local vapoursynth library
 # Howto http://www.sargo.es/2015/03/vapoursynth-installation-on-debian-or.html
 # Test Case: '$ vspipe -v'
-export PATH=/home/ferenc/vapoursynth/bin:$PATH
-export PYTHONPATH=/home/ferenc/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
-export LD_LIBRARY_PATH=/home/ferenc/vapoursynth/lib64/:$LD_LIBRARY_PATH
-export PKG_CONFIG_PATH=/home/ferenc/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
+export PATH=~/vapoursynth/bin:$PATH
+export PYTHONPATH=~/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
+export LD_LIBRARY_PATH=~/vapoursynth/lib64/:$LD_LIBRARY_PATH
+export PKG_CONFIG_PATH=~/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
 
 
 #if [ $TERM == 'xterm' ]
