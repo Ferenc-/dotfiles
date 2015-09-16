@@ -53,6 +53,8 @@ export PYTHONPATH=~/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
 export LD_LIBRARY_PATH=~/vapoursynth/lib64/:$LD_LIBRARY_PATH
 export PKG_CONFIG_PATH=~/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
 
+# Provides jemalloc for NeoVim
+export LD_LIBRARY_PATH=~/neovim/usr/lib64/:$LD_LIBRARY_PATH
 
 #if [ $TERM == 'xterm' ]
 #then
