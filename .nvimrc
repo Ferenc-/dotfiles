@@ -1,7 +1,7 @@
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-"Use this command to reload vimrc
-command! ReloadVimRc :so ~/.vimrc
+"Use this command to reload nvimrc
+command! ReloadVimRc :so ~/.nvimrc
 "Use this command to get rid of trailing whitespaces
 command! RemoveTrailingWhitespaces :%s/\s\+$
 "Use this command to make a hexdump from buffer content
