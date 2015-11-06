@@ -65,7 +65,9 @@ export LD_LIBRARY_PATH=~/neovim/usr/lib64/:$LD_LIBRARY_PATH
 #test -s ~/.alias && . ~/.alias || true
 
 alias tmux='tmux -2 -u'
-alias ag='ag --context --smart-case --color --pager="less -ix4SRFX"' 
+alias ag='ag --context --smart-case --color --pager="less -ix4SRFX"'
+# Ag is a mostly compatible but faster clone of Ack
+alias ack='ag'
 alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
 alias mpv-motion_compensated='mpv --vf vapoursynth=~/.mpv/filters/mvtools.vpy'
 alias man='man -P most'
