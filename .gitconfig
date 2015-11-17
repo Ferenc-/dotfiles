@@ -10,6 +10,7 @@
     prompt = false
     keepBackup = false
 [core]
+    editor = vim
     preloadindex = true
 [color]
     ui = true
