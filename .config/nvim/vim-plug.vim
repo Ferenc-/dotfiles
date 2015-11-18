@@ -13,6 +13,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'rking/ag.vim'
     Plug 'zirrostig/vim-schlepp'
     Plug 'octol/vim-cpp-enhanced-highlight'
+    Plug 'martong/vim-compiledb-path'
 
 " Add plugins to &runtimepath
 call plug#end()
