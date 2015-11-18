@@ -68,7 +68,8 @@ map ,st :%!scalariform -f -q -p=/home/ferenc/.scalariform.properties --stdin --s
 map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>
 map <C-t> :tabnew<CR>
-
+"Always open file under cursor on a new tab:
+map gf <C-w>gF
 
 imap <C-d> <Del>
 imap <C-h> <BS>
