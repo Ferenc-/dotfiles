@@ -41,6 +41,7 @@ export LESSHISTFILE=-
 export LESSHISTSIZE=0
 # System default is: LESS=-M -I -R
 export LESS="$LESS -N"
+[[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 
 # Makes 'man 1 man' work again
 export MAN_POSIXLY_CORRECT=1
