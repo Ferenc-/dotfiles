@@ -72,6 +72,7 @@ alias ack='ag'
 alias w3m='w3m -o imgdisplay=/usr/lib64/w3m/w3mimgdisplay'
 alias mpv-motion_compensated='mpv --vf vapoursynth=~/.mpv/filters/mvtools.vpy'
 alias man='man -P most'
+alias metashell='metashell --std c++14'
 
 # Set core file size limit to unlimited
 # This should be handled by /etc/security/limits.conf
