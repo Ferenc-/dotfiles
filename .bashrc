@@ -49,16 +49,16 @@ export MAN_POSIXLY_CORRECT=1
 # Use, compile and link against home local vapoursynth library
 # Howto http://www.sargo.es/2015/03/vapoursynth-installation-on-debian-or.html
 # Test Case: '$ vspipe -v'
-export PATH=~/vapoursynth/bin:$PATH
-export PYTHONPATH=~/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
-export LD_LIBRARY_PATH=~/vapoursynth/lib64/:$LD_LIBRARY_PATH
-export PKG_CONFIG_PATH=~/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
+export PATH=~/COMPILED/vapoursynth/bin:$PATH
+export PYTHONPATH=~/COMPILED/vapoursynth/lib64/python3.4/site-packages:$PYTHONPATH
+export LD_LIBRARY_PATH=~/COMPILED/vapoursynth/lib64/:$LD_LIBRARY_PATH
+export PKG_CONFIG_PATH=~/COMPILED/vapoursynth/lib64/pkgconfig/:$PKG_CONFIG_PATH
 
 # Provides jemalloc for NeoVim
-export LD_LIBRARY_PATH=~/neovim/usr/lib64/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=~/COMPILED/neovim/usr/lib64/:$LD_LIBRARY_PATH
 
 # Provides libbear for Bear
-export LD_LIBRARY_PATH=~/Bear/lib64/:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=~/COMPILED/Bear/lib64/:$LD_LIBRARY_PATH
 
 #if [ $TERM == 'xterm' ]
 #then
