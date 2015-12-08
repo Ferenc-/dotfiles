@@ -6,6 +6,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'rhysd/vim-clang-format'
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'martong/vim-compiledb-path'
+    Plug 'shiracamus/vim-syntax-x86-objdump-d'
 "[/C++]
 
 "[Scala]
@@ -25,7 +26,6 @@ call plug#begin('~/.config/nvim/plugged')
 
 "[Misc]
     "Plug 'bling/vim-airline'
-    Plug 'shiracamus/vim-syntax-x86-objdump-d'
     Plug 'vim-scripts/AnsiEsc.vim'
     Plug 'zirrostig/vim-schlepp'
 "[/Misc]
