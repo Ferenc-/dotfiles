@@ -15,6 +15,10 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode context dir vcs)
 # VI-Mode
 # general activation
 bindkey -v
+bindkey '^R' history-incremental-search-backward
+bindkey "^P" history-beginning-search-backward
+bindkey "^N" history-beginning-search-forward
+bindkey '^H' backward-delete-char
 
 # make it more responsive
 export KEYTIMEOUT=1
