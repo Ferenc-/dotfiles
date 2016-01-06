@@ -16,9 +16,13 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode context dir vcs)
 # general activation
 bindkey -v
 bindkey '^R' history-incremental-search-backward
-bindkey "^P" history-beginning-search-backward
-bindkey "^N" history-beginning-search-forward
+bindkey '^P' history-beginning-search-backward
+bindkey '^N' history-beginning-search-forward
 bindkey '^H' backward-delete-char
+bindkey '^A' beginning-of-line
+bindkey '^E' end-of-line
+#bindkey "${terminfo[khome]}" beginning-of-line
+#bindkey "${terminfo[kend]}" end-of-line
 
 # make it more responsive
 export KEYTIMEOUT=1
