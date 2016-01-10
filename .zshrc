@@ -23,6 +23,8 @@ bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
 #bindkey "${terminfo[khome]}" beginning-of-line
 #bindkey "${terminfo[kend]}" end-of-line
+bindkey '^F' forward-char
+bindkey '^B' backward-char
 
 # make it more responsive
 export KEYTIMEOUT=1
