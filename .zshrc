@@ -1,5 +1,8 @@
 # Created by newuser for 5.1.1
 
+# set -k
+setopt interactivecomments
+
 #export TERM="screen-256color-bce"
 export TERM=xterm-256color
 #export DEFAULT_USER="ferenc"
