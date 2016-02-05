@@ -31,3 +31,9 @@ bindkey '^B' backward-char
 
 # make it more responsive
 export KEYTIMEOUT=1
+
+
+# Extra completions
+export FPATH=~/COMPILED/mpv/share/zsh/site-functions:$FPATH
+autoload -U _mpv
+compdef _mpv mpv
