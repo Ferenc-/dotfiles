@@ -6,7 +6,7 @@ core = vs.get_core()
 # [workaround] 
 # plugin autoload doesn't seem to work so load the plugin explicitely
 # https://github.com/mpv-player/mpv/issues/566
-core.std.LoadPlugin("/home/ferenc/vapoursynth/lib64/libmvtools.so")
+core.std.LoadPlugin("/home/ferenc/COMPILED/vapoursynth/lib64/libmvtools.so")
 # [/workaround]
 
 clip = video_in
