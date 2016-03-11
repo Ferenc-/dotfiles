@@ -37,3 +37,11 @@ export KEYTIMEOUT=1
 export FPATH=~/COMPILED/mpv/share/zsh/site-functions:$FPATH
 autoload -U _mpv
 compdef _mpv mpv
+
+# History settings
+export HISTFILE=~/.zsh_history
+export HISTSIZE=50000
+export SAVEHIST=$HISTSIZE
+setopt EXTENDED_HISTORY
+setopt APPEND_HISTORY
+setopt HIST_NO_STORE
