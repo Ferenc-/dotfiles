@@ -42,11 +42,10 @@ export TERM=xterm-256color
 
 #[Extra completions]
     ## homeshick
-    ## See https://github.com/andsens/homeshick/issues/89
     source "$HOME/.homesick/repos/homeshick/homeshick.sh"
-    fpath=($HOME/.homesick/repos/homeshick/completions $fpath)
-    autoload -U compinit
-    compinit
+    export FPATH=$HOME/.homesick/repos/homeshick/completions:$FPATH
+    autoload -U _homeshick
+    compdef _homeshick homeshick
 
     ## mpv
     export FPATH=~/COMPILED/mpv/share/zsh/site-functions:$FPATH
