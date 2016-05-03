@@ -10,7 +10,8 @@ command! AsciiToHex :%!xxd
 command! HexToAscii :%!xxd -r
 "Add new syntax coloring to text with
 ":syntax keyword Constant ac
-
+"Use this command to sort the selected lines
+command! SortSelectedLines :'<,'>sort /\ze\%V/
 
 let g:python2_host_prog='/usr/bin/python2'
 let g:python3_host_prog='/usr/bin/python3'
