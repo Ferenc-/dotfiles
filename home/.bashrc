@@ -102,3 +102,6 @@ isLocalTCPportOpen()
     }
     (: </dev/tcp/127.0.0.1/${1}) &>/dev/null && echo "OPEN" || echo "CLOSED"
 }
+
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
