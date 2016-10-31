@@ -41,6 +41,8 @@ export TERM=xterm-256color
 #[/VI-Mode]
 
 #[Extra completions]
+    autoload -U compinit && compinit
+
     ## homeshick
     source "$HOME/.homesick/repos/homeshick/homeshick.sh"
     export FPATH=$HOME/.homesick/repos/homeshick/completions:$FPATH
