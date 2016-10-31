@@ -13,6 +13,9 @@ command! HexToAscii :%!xxd -r
 "Use this command to sort the selected lines
 command! SortSelectedLines :'<,'>sort /\ze\%V/
 
+command! PrettyPrintJson :%!python -m json.tool
+"command! PrettyfySelectedAsJson :<,'>!python -m json.tool
+
 let g:python2_host_prog='/usr/bin/python2'
 let g:python3_host_prog='/usr/bin/python3'
 
