@@ -1,4 +1,4 @@
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 
 "Use this command to reload nvimrc
 command! ReloadVimRc :so ~/.config/nvim/init.vim
