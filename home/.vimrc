@@ -24,8 +24,12 @@ set incsearch
 set hlsearch
 "Use ':noh' to clear highlights
 
-set t_Co=256
-"set guifont=Monospace\ 10
+"Needed by termguicolors to work in TMUX
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+let &t_SI="\e[6 q"
+let &t_EI="\e[2 q"
+set termguicolors
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Semi-Bold\ 10
 set winaltkeys=no
 set noswapfile
@@ -86,7 +90,9 @@ vmap <unique> <down>  <Plug>SchleppDown
 vmap <unique> <left>  <Plug>SchleppLeft
 vmap <unique> <right> <Plug>SchleppRight
 
-colors calmar256-dark
+"colors calmar256-dark
+colors vydark
+"colors solarized8_dark
 hi clear CursorLine
 hi CursorLineNR cterm=BOLD ctermfg=28
 "ctermbg=234
