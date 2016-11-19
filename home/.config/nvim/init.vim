@@ -24,7 +24,7 @@ source ~/.config/nvim/syntastic.vim
 source ~/.config/nvim/youcompletme.vim
 source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/nerdtree.vim
-"source ~/.nvim/config/vim-airline.vim
+source ~/.config/nvim/vim-airline.vim
 
 syntax on
 set number

@@ -25,7 +25,8 @@ call plug#begin('~/.config/nvim/plugged')
 "[/IDE]
 
 "[Misc]
-    "Plug 'bling/vim-airline'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
     Plug 'vim-scripts/AnsiEsc.vim'
     Plug 'zirrostig/vim-schlepp'
 "[/Misc]
