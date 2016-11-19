@@ -3,9 +3,6 @@
 # set -k
 setopt interactivecomments
 
-#export TERM="screen-256color-bce"
-export TERM=xterm-256color
-
 #[POWERLEVEL9K]
     #export DEFAULT_USER="ferenc"
     # For color codes check spectrum_ls:
