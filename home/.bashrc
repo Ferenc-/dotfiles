@@ -60,6 +60,9 @@ export LD_LIBRARY_PATH=~/COMPILED/neovim/usr/lib64/:$LD_LIBRARY_PATH
 # Provides libbear for Bear
 export LD_LIBRARY_PATH=~/COMPILED/Bear/lib64/:$LD_LIBRARY_PATH
 
+# Provides libtorsocks for torsocks
+export LD_LIBRARY_PATH=~/COMPILED/torsocks/lib64/torsocks/:$LD_LIBRARY_PATH
+
 #if [ $TERM == 'xterm' ]
 #then
 
