@@ -7,6 +7,9 @@ let g:airline_theme='distinguished'
 "let g:airline_theme='zenburn'
 "let g:airline_theme='monochrome'
 
+" Don't show empty sections
+let g:airline_skip_empty_sections = 1
+
 " Make tabline only show tabs, instead of buffers
 " otherwise 'Closing a tab does not delete a buffer'
 " https://github.com/bling/vim-airline/issues/220
