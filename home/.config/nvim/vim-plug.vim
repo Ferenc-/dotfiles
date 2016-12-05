@@ -21,7 +21,7 @@ call plug#begin('~/.config/nvim/plugged')
 "[IDE]
     Plug 'majutsushi/tagbar'
     Plug 'scrooloose/nerdtree'
-    Plug 'rking/ag.vim'
+    Plug 'mileszs/ack.vim'
 "[/IDE]
 
 "[Misc]
