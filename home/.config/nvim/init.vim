@@ -20,12 +20,13 @@ let g:python2_host_prog='/usr/bin/python2'
 let g:python3_host_prog='/usr/bin/python3'
 
 source ~/.config/nvim/vim-plug.vim
+
 source ~/.config/nvim/ack.vim
-source ~/.config/nvim/syntastic.vim
-source ~/.config/nvim/youcompletme.vim
-source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/nerdtree.vim
+source ~/.config/nvim/syntastic.vim
+source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/vim-airline.vim
+source ~/.config/nvim/youcompletme.vim
 
 syntax on
 set number
