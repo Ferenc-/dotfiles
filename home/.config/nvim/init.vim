@@ -20,6 +20,7 @@ let g:python2_host_prog='/usr/bin/python2'
 let g:python3_host_prog='/usr/bin/python3'
 
 source ~/.config/nvim/vim-plug.vim
+source ~/.config/nvim/ack.vim
 source ~/.config/nvim/syntastic.vim
 source ~/.config/nvim/youcompletme.vim
 source ~/.config/nvim/tagbar.vim
