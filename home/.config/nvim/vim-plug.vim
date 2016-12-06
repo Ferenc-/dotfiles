@@ -13,6 +13,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ensime/ensime-vim'
     Plug 'derekwyatt/vim-scala'
 "[/Scala]
+"
+"[Robot-framework]
+    Plug 'Ferenc-/robotframework-vim'
+"[/Robot-framework]
 
 "[Git]
     Plug 'tpope/vim-fugitive'
