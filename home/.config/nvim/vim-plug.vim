@@ -15,7 +15,7 @@ call plug#begin('~/.config/nvim/plugged')
 "[/Scala]
 "
 "[Robot-framework]
-    Plug 'Ferenc-/robotframework-vim'
+    Plug 'mfukar/robotframework-vim'
 "[/Robot-framework]
 
 "[Git]
