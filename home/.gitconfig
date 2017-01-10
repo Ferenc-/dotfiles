@@ -9,8 +9,10 @@
 [mergetool]
     prompt = false
     keepBackup = false
+[mergetool "vimdiff"]
+    cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED
 [core]
-    editor = vim
+    editor = nvim
     preloadindex = true
 [color]
     ui = true
@@ -20,5 +22,7 @@
     tool = vimdiff
 [difftool]
     prompt = false
+[difftool "vimdiff"]
+    cmd = nvim -d $BASE $LOCAL
 [http]
     sslVerify = true
