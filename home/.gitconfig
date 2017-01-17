@@ -23,6 +23,6 @@
 [difftool]
     prompt = false
 [difftool "vimdiff"]
-    cmd = nvim -d $BASE $LOCAL
+    cmd = nvim -d $LOCAL $REMOTE
 [http]
     sslVerify = true
