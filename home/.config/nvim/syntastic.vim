@@ -6,6 +6,7 @@ highlight SignColumn ctermbg=None
 let g:syntastic_c_checkers=['ycm']
 let g:syntastic_cpp_checkers=['ycm']
 let g:syntastic_sh_checkers = ['sh', 'checkbashisms', 'shellcheck']
+let g:syntastic_sh_shellcheck_args = '-x'
 let g:syntastic_python_pylama_args = '-l pep8,pyflakes,pep257,mccabe,pylint'
 let g:syntastic_python_checkers = ['python', 'flake8', 'pylama', 'py3kwarn']
 let g:syntastic_java_checkers=[]
