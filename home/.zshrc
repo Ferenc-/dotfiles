@@ -15,6 +15,11 @@ setopt interactivecomments
     POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode context dir vcs)
 #[/POWERLEVEL9K]
 
+#[K]
+    source "$HOME/COMPILED/k/k.sh"
+    alias k='k -h'
+#[/K]
+
 #[VI-Mode]
     ## general activation
     bindkey -v
