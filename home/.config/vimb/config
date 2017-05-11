@@ -1,1 +1,8 @@
 set history-max-items=0
+
+# Zoom via CTRL+ and CTRL- is not possible at the moment
+# https://github.com/fanglingsu/vimb/issues/376
+# so we will zoom with + and - =
+nmap + zI
+nmap - zO
+nmap = zz
