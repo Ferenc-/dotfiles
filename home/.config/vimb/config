@@ -6,3 +6,12 @@ set history-max-items=0
 nmap + zI
 nmap - zO
 nmap = zz
+
+# This would be extra tabbed control keymaps from vimb
+# But these don't seem to work right now, I suspect some issue
+# enabling  https://www.semicomplete.com/projects/xdotool
+# In the meantime use CTR + SHIFT + LEFT RIGTH etc from custom tabbed settings
+nnoremap gt :sh! xdotool key --window $VIMB_XID ctrl+shift+l<CR><Esc>
+nnoremap gT :sh! xdotool key --window $VIMB_XID ctrl+shift+h<CR><Esc>
+nnoremap 1gt :sh! xdotool key --window $VIMB_XID ctrl+1<CR><Esc>
+nnoremap 9gt :sh! xdotool key --window $VIMB_XID ctrl+9<CR><Esc>
