@@ -1,4 +1,5 @@
 set history-max-items=0
+set incsearch=true
 
 # Zoom via CTRL+ and CTRL- is not possible at the moment
 # https://github.com/fanglingsu/vimb/issues/376
