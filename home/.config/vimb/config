@@ -2,6 +2,10 @@ set history-max-items=0
 set incsearch=true
 set input-autohide=true
 
+# The default is
+# set status-ssl-css=background-color:#95e454;color:#000;
+set status-ssl-css=color:#000;background-color:#448d00;
+
 # Zoom via CTRL+ and CTRL- is not possible at the moment
 # https://github.com/fanglingsu/vimb/issues/376
 # so we will zoom with + and - =
