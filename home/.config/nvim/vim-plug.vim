@@ -13,7 +13,15 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ensime/ensime-vim'
     Plug 'derekwyatt/vim-scala'
 "[/Scala]
-"
+
+"[Docker]
+    Plug 'ekalinin/Dockerfile.vim'
+"[/Docker]
+
+"[YAML-RAML]
+    Plug 'stephpy/vim-yaml'
+"[/YAML-RAML]
+
 "[Robot-framework]
     Plug 'mfukar/robotframework-vim'
 "[/Robot-framework]
