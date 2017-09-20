@@ -56,6 +56,12 @@ setopt interactivecomments
     autoload -U _mpv
     compdef _mpv mpv
 
+    ## das
+    export PATH=~/das/das-internal-tools/script:$PATH
+    export PATH=~/das/cdf/:$PATH
+    export FPATH=~/das/das-internal-tools/config/:$FPATH
+    source ~/das/das-internal-tools/config/das-plugins.zsh
+
     ## Kubernetes kubectl completion only if it is installed and available
     ## https://vishh.github.io/docs/user-guide/kubectl/kubectl_completion/
     which kubectl >/dev/null 2>&1 && source <(kubectl completion zsh)
