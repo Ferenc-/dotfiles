@@ -68,6 +68,10 @@ setopt interactivecomments
     setopt EXTENDED_HISTORY
     setopt APPEND_HISTORY
     setopt HIST_NO_STORE
+
+    # Enable History Expansion on magic-space:
+    # http://zsh.sourceforge.net/Doc/Release/Expansion.html#History-Expansion
+    bindkey " " magic-space
 #[/History settings]
 
 #[Zstyle settings]
