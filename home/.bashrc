@@ -71,7 +71,7 @@ export LD_LIBRARY_PATH=~/COMPILED/torsocks/lib64/torsocks/:$LD_LIBRARY_PATH
 
 #test -s ~/.alias && . ~/.alias || true
 
-alias tmux='LANG=en_US.UTF-8 tmux -2 -u'
+alias tmux='TERM=xterm-256color LANG=en_US.UTF-8 tmux -2 -u'
 alias ag='ag --context --smart-case --color --pager="less -ix4SRFX"'
 # Ag is a mostly compatible but faster clone of Ack
 alias ack='ag'
