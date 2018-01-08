@@ -1,8 +1,11 @@
 call plug#begin('~/.config/nvim/plugged')
 
+"[LanguageServer]
+    Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+"[/LanguageServer]
+
 "[C++]
     Plug 'Syntastic'
-    Plug 'Valloric/YouCompleteMe'
     Plug 'rhysd/vim-clang-format'
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'martong/vim-compiledb-path'
@@ -34,6 +37,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'majutsushi/tagbar'
     Plug 'scrooloose/nerdtree'
     Plug 'mileszs/ack.vim'
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 "[/IDE]
 
 "[Misc]
