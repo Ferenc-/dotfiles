@@ -17,6 +17,8 @@
 [color]
     ui = true
 [alias]
+    show-difftool = "!sh -c 'git difftool $1^ $1 --' -"
+    foo = !git show-difftool
     lol = log --graph --decorate --oneline
 [diff]
     tool = vimdiff
