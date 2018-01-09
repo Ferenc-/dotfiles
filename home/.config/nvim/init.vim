@@ -23,11 +23,11 @@ source ~/.config/nvim/vim-plug.vim
 
 source ~/.config/nvim/ack.vim
 source ~/.config/nvim/nerdtree.vim
-source ~/.config/nvim/syntastic.vim
 source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/vim-airline.vim
 source ~/.config/nvim/deoplete.vim
 source ~/.config/nvim/languageclient-neovim.vim
+source ~/.config/nvim/ale.vim
 
 syntax on
 set number
@@ -61,16 +61,15 @@ vnoremap dw "_dw
 nnoremap dd "_dd
 vnoremap dd "_dd
 
-map <F3> :YcmCompleter GoToDefinition <CR>
 map <F4> :tabedit ~/.config/nvim/init.vim <CR>
 map <F9> :TagbarToggle<CR>:NERDTreeToggle<CR>
 map <F10> :TagbarToggle<CR>
 map <F11> :NERDTreeToggle<CR>
 
-map <C-K> :ClangFormat<CR>
-imap <C-K> <ESC>:ClangFormat<CR>i
-
-map ,st :%!scalariform -f -q -p=/home/ferenc/.scalariform.properties --stdin --stdout<CR>
+"map <C-K> :ClangFormat<CR>
+"imap <C-K> <ESC>:ClangFormat<CR>i
+"
+"map ,st :%!scalariform -f -q -p=/home/ferenc/.scalariform.properties --stdin --stdout<CR>
 
 map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>

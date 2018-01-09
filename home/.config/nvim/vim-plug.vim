@@ -5,7 +5,6 @@ call plug#begin('~/.config/nvim/plugged')
 "[/LanguageServer]
 
 "[C++]
-    Plug 'Syntastic'
     Plug 'rhysd/vim-clang-format'
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'martong/vim-compiledb-path'
@@ -38,6 +37,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'scrooloose/nerdtree'
     Plug 'mileszs/ack.vim'
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+    Plug 'w0rp/ale'
 "[/IDE]
 
 "[Misc]
