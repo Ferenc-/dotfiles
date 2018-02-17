@@ -15,10 +15,6 @@ setopt interactivecomments
     POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode context dir vcs)
 #[/POWERLEVEL9K]
 
-#[K]
-    source "$HOME/COMPILED/k/k.sh"
-    alias k='k -h'
-#[/K]
 
 #[VI-Mode]
     ## general activation
@@ -79,3 +75,17 @@ setopt interactivecomments
     ## navigate the suggestions using the arrow keys on the keyboard
     zstyle ':completion:*' menu select
 #[/Zstyle settings]
+
+#[Binutil settings]
+    #[K]
+        source "$HOME/COMPILED/k/k.sh"
+        alias k='k -ha'
+    #[/K]
+
+    #[Rg|Ag|Ack]
+        alias rg='rg -n --heading --color=always --hidden --context 3 --smart-case'
+    #[/Rg|Ag|Ack]
+    #[Tig]
+        alias tig='tig --all'
+    #[/Tig]
+#[/Binutil settings]
