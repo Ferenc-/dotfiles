@@ -15,6 +15,9 @@ setopt interactivecomments
     POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode context dir vcs)
 #[/POWERLEVEL9K]
 
+#[ZSH-VIMODE-VISUAL]
+    source ~/COMPILED/zsh-vimode-visual/zsh-vimode-visual.zsh
+#[/ZSH-VIMODE-VISUAL]
 
 #[VI-Mode]
     ## general activation
