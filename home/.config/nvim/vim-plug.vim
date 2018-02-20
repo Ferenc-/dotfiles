@@ -11,6 +11,10 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'shiracamus/vim-syntax-x86-objdump-d'
 "[/C++]
 
+"[Java]
+    Plug 'artur-shaik/vim-javacomplete2'
+"[/Java]
+
 "[Scala]
     Plug 'ensime/ensime-vim'
     Plug 'derekwyatt/vim-scala'
