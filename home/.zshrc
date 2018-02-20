@@ -96,11 +96,15 @@ setopt interactivecomments
         source "$HOME/COMPILED/k/k.sh"
         alias k='k -ha'
     #[/K]
-
     #[Rg|Ag|Ack]
         alias rg='rg -n --heading --color=always --hidden --context 3 --smart-case'
     #[/Rg|Ag|Ack]
+    #[Git]
+        alias s='git status'
+        alias d='git difftool'
+        alias f='git difftool --cached'
+    #[/Git]
     #[Tig]
-        alias tig='tig --all'
+        alias t='tig --all'
     #[/Tig]
 #[/Binutil settings]
