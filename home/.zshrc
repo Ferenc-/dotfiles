@@ -79,6 +79,18 @@ setopt interactivecomments
     zstyle ':completion:*' menu select
 #[/Zstyle settings]
 
+#[Programming language / language server specific settings]
+    #[Rust]
+        export PATH="$HOME/.cargo/bin:$PATH"
+        export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
+    #[/Rust]
+
+    #[Go]
+        export GOROOT="$HOME/COMPILED/go1.8.3.linux-amd64/go"
+        export export PATH="${GOROOT}/bin:${PATH}"
+    #[/Go]
+#[/Programming language / language server specific settings]
+
 #[Binutil settings]
     #[K]
         source "$HOME/COMPILED/k/k.sh"
