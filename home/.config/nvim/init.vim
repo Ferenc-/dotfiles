@@ -74,6 +74,22 @@ map <F11> :NERDTreeToggle<CR>
 map <C-S-tab> :tabprevious<CR>
 map <C-tab> :tabnext<CR>
 map <C-t> :tabnew<CR>
+
+" PUM (pop-up menu) item selection with tab and shift tab
+inoremap <expr> <S-tab> pumvisible() ? '<C-p>' : '<S-tab>'
+inoremap <expr> <tab> pumvisible() ? '<C-n>' : '<tab>'
+
+" Override Enter for the popup menu, not to include a newline
+" This should be working by default specially with deoplete but it doesn't.
+"
+" Even more annyoing is that a simple inoremap doesn't work either!
+" When debugging :verbose imap shows that <CR> is set to <CR> form this file???
+" complete madness...
+"
+" Anyhow workaround is 'delaying the actual definition until after the plugins have been initialized'
+" found here: https://stackoverflow.com/a/26972189/2070694
+autocmd VimEnter * inoremap <expr> <CR> pumvisible() ? '<C-y>' : '<CR>'
+
 "Always open file under cursor on a new tab:
 map gf <C-w>gF
 
