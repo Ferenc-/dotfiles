@@ -19,3 +19,11 @@ nmap <silent> <C-j> <Plug>(ale_next_wrap)
 "map <C-k> :cp<CR>
 "Works for everything which uses the quickfix windows
 "Furthermore you can jump with :cc 3 for the 3 item.
+
+
+"Linter specific settings
+    "Python specific settings
+        let g:ale_python_pylint_args="--disable=missing-docstring"
+        let g:ale_python_flake8_args="--ignore=D103" "W503
+    "/Python specific settings
+"/Linter specific settings
