@@ -59,6 +59,10 @@ setopt interactivecomments
     ## Kubernetes kubectl completion only if it is installed and available
     ## https://vishh.github.io/docs/user-guide/kubectl/kubectl_completion/
     which kubectl >/dev/null 2>&1 && source <(kubectl completion zsh)
+
+    ## Helm completion only if it is installed and available
+    ## https://github.com/kubernetes/helm/blob/master/docs/helm/helm_completion.md
+    which helm >/dev/null 2>&1 && source <(helm completion zsh)
 #[/Extra completions]
 
 #[History settings]
