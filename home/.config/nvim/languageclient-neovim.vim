@@ -14,6 +14,29 @@ set hidden
 " just do: 'pip install python-language-server' this will install pyls
 " pyls:  https://github.com/palantir/python-language-server
 "
+" For debugging and fine tuning start with: 'python': ['pyls', '-vvv'],
+" And check /tmp/LanguageServer.log for diagnostic messges like this:
+" DEBUG - pyls.rpc_manager - Notify textDocument/publishDiagnostics
+" {
+"  'uri': u'file:///home/efergcz/CICD/log-testapp/test.py',
+"  'diagnostics': [
+"                  {
+"                   'source': 'pycodestyle',
+"                   'range': {
+"                             'start': {'line': 60, 'character': 79},
+"                             'end': {'line': 60, 'character': 88}
+"                            },
+"                   'code': 'E501',
+"                   'message': 'E501 line too long (87 > 79 characters)',
+"                   'severity': 2
+"                  }
+"                 ]
+" }
+" Add pycodestyle.cfg in the project's directory
+" with the following content:
+" [pycodestyle]
+" ignore = E501
+"
 " __Go__
 " just do: 'go get -u github.com/sourcegraph/go-langserver'
 " and then the go-langserver should be under:
