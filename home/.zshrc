@@ -97,6 +97,12 @@ setopt interactivecomments
 #[/Programming language / language server specific settings]
 
 #[Binutil settings]
+    #[H]
+        alias h='helm ls -a'
+    #[H]
+    #[J]
+        alias j='jobs'
+    #[/J]
     #[K]
         source "$HOME/COMPILED/k/k.sh"
         alias k='k -ha'
