@@ -2,6 +2,9 @@ set history-max-items=0
 set incsearch=true
 set input-autohide=true
 set hint-keys=asdfghjkl
+set scripts=on
+set cookie-accept=never
+set private-browsing=on
 
 # The default is
 # set status-ssl-css=background-color:#95e454;color:#000;
@@ -22,3 +25,19 @@ nnoremap gt :sh! xdotool key --window $VIMB_XID ctrl+shift+l<CR><Esc>
 nnoremap gT :sh! xdotool key --window $VIMB_XID ctrl+shift+h<CR><Esc>
 nnoremap 1gt :sh! xdotool key --window $VIMB_XID ctrl+1<CR><Esc>
 nnoremap 9gt :sh! xdotool key --window $VIMB_XID ctrl+9<CR><Esc>
+
+# This is for read mode from simplyread
+# Downloaded and extracted from here: https://njw.name/simplyread/
+# Instructions are from here: https://github.com/fanglingsu/vimb/issues/457
+nnoremap d :e! simplyread();<CR>
+
+# Adblocking update
+# https://github.com/jun7/wyebadblock
+# https://easylist.to/easylist/easylist.txt
+# https://github.com/fanglingsu/vimb/issues/430#issuecomment-319866417
+# https://github.com/fanglingsu/vimb/issues/430#issuecomment-367570464
+# To enable the ad blocker compile and link:
+# ~/COMPILED/wyebadblock && make
+# cd ~/COMPILED/vimb/sandbox/usr/lib/vimb
+# ln -s ~/COMPILED/wyebadblock/adblock.so
+nmap <C-S-U> :sh! vimb_adblock_update<CR>
