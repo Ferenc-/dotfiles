@@ -107,6 +107,12 @@ setopt interactivecomments
         source "$HOME/COMPILED/k/k.sh"
         alias k='k -ha'
     #[/K]
+    #[L]
+        alias l='ls -lah --color=always'
+    #[/L]
+    #[N]
+        alias n='nvim'
+    #[/N]
     #[Rg|Ag|Ack]
         alias rg='rg -n --heading --color=always --hidden --context 3 --smart-case'
     #[/Rg|Ag|Ack]
