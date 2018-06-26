@@ -42,10 +42,33 @@ set hidden
 " and then the go-langserver should be under:
 " ~/go/bin/go-langserver which has to be in your PATH
 "
+"__Java__
+" Clone and build with: ./mvnw package
+" https://github.com/eclipse/eclipse.jdt.ls#building-from-the-command-line
+"
+" Optionally 2nd check if runnable:
+" https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
+"
+" Copy config_linux and .jar to some short path
+" Start nvim and wait until something like the following appears:
+" 'Starting 20% Starting Java Language Server'
+"
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'python': ['pyls'],
     \ 'go': ['go-langserver', '-gocodecompletion'],
+    \ 'java': [
+    \          'java',
+    \          '-Declipse.application=org.eclipse.jdt.ls.core.id1',
+    \          '-Dosgi.bundles.defaultStartLevel=4',
+    \          '-Declipse.product=org.eclipse.jdt.ls.core.product',
+    \          '-Dlog.level=ALL',
+    \          '-noverify',
+    \          '-Xmx1G',
+    \          '-jar', '/home/efergcz/bin/plugins/org.eclipse.equinox.launcher_1.5.100.v20180607-1243.jar',
+    \          '-configuration', '/home/efergcz/config_linux',
+    \          '-data'
+    \         ]
     \ }
 
 " Automatically start language servers.
