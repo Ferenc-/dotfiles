@@ -43,16 +43,23 @@ set hidden
 " ~/go/bin/go-langserver which has to be in your PATH
 "
 "__Java__
-" Clone and build with: ./mvnw package
+" Download
+" http://download.eclipse.org/jdtls/snapshots/jdt-language-server-latest.tar.gz
+"
+" Copy config_linux and plugins, .jar to some short path
+" optionally symlink with:
+" 'ln -s org.eclipse.equinox.launcher_*.jar org.eclipse.equinox.launcher_.jar'
+"
+" Start nvim and wait until something like the following appears:
+" 'Starting 20% Starting Java Language Server'
+"
+" Alternatively
+" clone and build with: ./mvnw package
 " https://github.com/eclipse/eclipse.jdt.ls#building-from-the-command-line
 "
 " Optionally 2nd check if runnable:
 " https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
-"
-" Copy config_linux and .jar to some short path
-" Start nvim and wait until something like the following appears:
-" 'Starting 20% Starting Java Language Server'
-"
+"  '/home/efergcz/bin/plugins/org.eclipse.equinox.launcher_1.5.100.v20180607-1243.jar',
 let g:LanguageClient_serverCommands = {
     \ 'rust': ['rustup', 'run', 'stable', 'rls'],
     \ 'python': ['pyls'],
@@ -65,7 +72,7 @@ let g:LanguageClient_serverCommands = {
     \          '-Dlog.level=ALL',
     \          '-noverify',
     \          '-Xmx1G',
-    \          '-jar', '/home/efergcz/bin/plugins/org.eclipse.equinox.launcher_1.5.100.v20180607-1243.jar',
+    \          '-jar', '/home/efergcz/bin/plugins/org.eclipse.equinox.launcher_.jar',
     \          '-configuration', '/home/efergcz/config_linux',
     \          '-data'
     \         ]
@@ -73,6 +80,9 @@ let g:LanguageClient_serverCommands = {
 
 " Automatically start language servers.
 let g:LanguageClient_autoStart = 1
+
+" Increase logging
+let g:LanguageClient_loggingLevel = 'DEBUG'
 
 " Maps K to hover, gd to goto definition, F2 to rename
 nnoremap <silent> K :call LanguageClient_textDocument_hover()<CR>
