@@ -99,7 +99,7 @@ setopt interactivecomments
     #[/Go]
 #[/Programming language / language server specific settings]
 
-#[Binutil settings]
+#[Binutil aliases]
     #[H]
         alias h='helm ls -a'
     #[H]
@@ -127,4 +127,9 @@ setopt interactivecomments
     #[Tig]
         alias t='tig --all'
     #[/Tig]
-#[/Binutil settings]
+#[/Binutil aliases]
+
+#[Sdkman] Management for JVM based SDK versions
+    export SDKMAN_DIR="/home/${USER}/.sdkman"
+    [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
+#[/Sdkman]
