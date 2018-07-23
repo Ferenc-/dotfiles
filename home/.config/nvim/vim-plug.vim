@@ -37,7 +37,6 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'scrooloose/nerdtree'
     Plug 'mileszs/ack.vim'
     Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-    Plug 'w0rp/ale'
 "[/IDE]
 
 "[Misc]
