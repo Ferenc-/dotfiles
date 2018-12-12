@@ -1,0 +1,21 @@
+{
+    "slack_token": "",
+    "sidebar_width": 3,
+
+    "theme": {
+        "view": {
+            "fg": "cyan",
+            "bg": "default",
+            "border_fg": "white",
+            "border_bg": "",
+            "label_fg": "yellow",
+            "label_bg": ""
+        },
+        "message": {
+            "time_format": "02/01 15:04",
+            "time": "fg-green,fg-bold",
+            "name": "colorize,fg-bold",
+            "text": "fg-white"
+        }
+    }
+}
