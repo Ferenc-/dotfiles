@@ -1,7 +1,10 @@
 call plug#begin('~/.config/nvim/plugged')
 
 "[LanguageServer]
-    Plug 'autozimu/LanguageClient-neovim', { 'do': ':UpdateRemotePlugins' }
+   Plug 'autozimu/LanguageClient-neovim', {
+               \ 'branch': 'next',
+               \ 'do': 'bash install.sh',
+               \ }
 "[/LanguageServer]
 
 "[C++]
