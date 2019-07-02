@@ -94,7 +94,7 @@ setopt interactivecomments
     #[/Rust]
 
     #[Go]
-        export GOROOT="${HOME}/COMPILED/go1.10.3.linux-amd64/go"
+        export GOROOT="${HOME}/COMPILED/go1.12.6.linux-amd64/go"
         export PATH="${GOROOT}/bin:${PATH}"
         export GOPATH="${HOME}/COMPILED/"
     #[/Go]
