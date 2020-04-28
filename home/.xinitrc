@@ -72,7 +72,17 @@ esac
 #disables dpms features
 /usr/bin/xset -dpms
 
-
+# General setting of mousekeys
+#https://askubuntu.com/questions/68807/how-can-i-configure-mousekeys
+# If mouse key is too slow use xkbset
+#https://unix.stackexchange.com/questions/41702/mousekeys-is-too-slow-in-gnome3-fedora
+# If 5 on the numpad is doing the wrong click then use /*- to change:
+# / is left click * is middle click - is right click
+#https://ubuntuforums.org/showthread.php?t=1407932&s=7ddf35758c1b26539a6a7676f1dc8924
+if type kxbset;
+then
+    xkbset ma 50 20 20 30 300
+fi
 
 # day planer deamon
 # pland &
