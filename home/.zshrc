@@ -138,3 +138,10 @@ setopt interactivecomments
     export SDKMAN_DIR="/home/${USER}/.sdkman"
     [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 #[/Sdkman]
+
+# Turn off autocomplete beeps
+unsetopt LIST_BEEP
+# Turn off beeps on going beyond the history
+unsetopt HIST_BEEP
+# Turn off all beeps
+unsetopt BEEP
