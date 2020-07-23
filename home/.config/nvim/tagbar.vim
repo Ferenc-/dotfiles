@@ -7,3 +7,11 @@ let g:tagbar_hide_nonpublic = 0
 "Also make it very unlikely to accidentally hide the
 "private members
 let g:tagbar_map_hidenonpublic = "¤"
+
+let g:tagbar_type_ansible = {
+	\ 'ctagstype' : 'ansible',
+	\ 'kinds' : [
+		\ 't:tasks'
+	\ ],
+	\ 'sort' : 0
+    \ }
