@@ -4,17 +4,15 @@
 # set -k
 setopt interactivecomments
 
-#[POWERLEVEL9K]
-    #export DEFAULT_USER="ferenc"
-    # For color codes check spectrum_ls:
-    # https://github.com/dmmalam/dotty/blob/master/zsh/functions/spectrum_ls
-    # For available segment colors
-    # https://github.com/chris-murray/powerlevel9k-custom#special-segment-colors
-    export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND="234"
-    export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND="015"
-    source ~/COMPILED/powerlevel9k/powerlevel9k.zsh-theme
-    POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(vi_mode context dir vcs)
-#[/POWERLEVEL9K]
+
+#[POWERLEVEL10K]
+    # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+    # Initialization code that may require console input (password prompts, [y/n]
+    # confirmations, etc.) must go above this block; everything else may go below.
+    if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+      source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+    fi
+#[/POWERLEVEL10K]
 
 #[ZSH-SYNTAX-HIGHLIGHT]
     source ~/COMPILED/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -145,3 +143,6 @@ unsetopt LIST_BEEP
 unsetopt HIST_BEEP
 # Turn off all beeps
 unsetopt BEEP
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
