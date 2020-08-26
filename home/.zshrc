@@ -105,7 +105,7 @@ setopt interactivecomments
 
 #[Binutil aliases]
     #[Colorized cat]
-    alias ccat="pygmentize -g"
+    alias ccat="pygmentize -O "style=emacs" -g"
     #[/Colorized cat]
     #[H]
         alias h='helm ls -a'
