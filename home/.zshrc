@@ -12,6 +12,7 @@ setopt interactivecomments
     if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
       source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
     fi
+    source ~/COMPILED/powerlevel10k/powerlevel10k.zsh-theme
 #[/POWERLEVEL10K]
 
 #[ZSH-SYNTAX-HIGHLIGHT]
@@ -103,6 +104,9 @@ setopt interactivecomments
 #[/Programming language / language server specific settings]
 
 #[Binutil aliases]
+    #[Colorized cat]
+    alias ccat="pygmentize -g"
+    #[/Colorized cat]
     #[H]
         alias h='helm ls -a'
     #[H]
