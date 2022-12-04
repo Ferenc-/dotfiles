@@ -1,6 +1,6 @@
 local Plug = vim.fn['plug#']
 
-vim.call('plug#begin', '~/.config/nvim/plugged')
+vim.call('plug#begin', '~/.var/app/io.neovim.nvim/data/plugged')
 
 Plug 'tpope/vim-sensible'
 
