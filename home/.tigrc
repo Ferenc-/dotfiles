@@ -1,2 +1,2 @@
-set main-view = line-number:true,interval=1 id:yes date:default author:full commit-title:graph=v2,refs=true
+set main-view = line-number:true,interval=1 id:yes date:default author:full,maxwidth=25 commit-title:graph=v2,refs=true
 set line-graphics = utf-8
