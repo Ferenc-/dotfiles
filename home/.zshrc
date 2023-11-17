@@ -66,6 +66,9 @@ setopt interactivecomments
     ## Helm completion only if it is installed and available
     ## https://github.com/kubernetes/helm/blob/master/docs/helm/helm_completion.md
     which helm >/dev/null 2>&1 && source <(helm completion zsh)
+
+    ## eksctl completion only if it is installed and available
+    which eksctl >/dev/null 2>&1 && source <(eksctl completion zsh)
 #[/Extra completions]
 
 #[History settings]
