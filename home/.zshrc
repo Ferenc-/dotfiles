@@ -71,6 +71,13 @@ setopt interactivecomments
 
     ## eksctl completion only if it is installed and available
     which eksctl >/dev/null 2>&1 && source <(eksctl completion zsh)
+
+    ## aws completion only if it is installed and available
+    if which aws_completer >/dev/null 2>&1; then
+      autoload bashcompinit && bashcompinit
+      autoload -Uz compinit && compinit
+      complete -C 'aws_completer' aws
+    fi
 #[/Extra completions]
 
 #[History settings]
