@@ -78,6 +78,10 @@ setopt interactivecomments
       autoload -Uz compinit && compinit
       complete -C 'aws_completer' aws
     fi
+
+    ## Tekton CLI tkn
+    which tkn >/dev/null 2>&1 && source <(tkn completion zsh)
+
 #[/Extra completions]
 
 #[History settings]
