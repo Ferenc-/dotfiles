@@ -129,8 +129,8 @@ setopt interactivecomments
         alias j='jobs'
     #[/J]
     #[K]
-        source "$HOME/COMPILED/k/k.sh"
-        alias k='k -ha'
+        alias k='kubectl'
+        compdef _kubectl k
     #[/K]
     #[L]
         alias l='ls -lah --color=always'
