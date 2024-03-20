@@ -75,7 +75,6 @@ setopt interactivecomments
     ## aws completion only if it is installed and available
     if which aws_completer >/dev/null 2>&1; then
       autoload bashcompinit && bashcompinit
-      autoload -Uz compinit && compinit
       complete -C 'aws_completer' aws
     fi
 
