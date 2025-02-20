@@ -87,6 +87,10 @@ setopt interactivecomments
 
     # IBM Fyre CLI
     source <(~/github.ibm.com/Antonio-Gutierrez1/fyre/fyre completion zsh)
+
+    # IBM docctl
+    which docctl >/dev/null 2>&1 && source <(docctl completion zsh)
+
 #[/Extra completions]
 
 #[History settings]
