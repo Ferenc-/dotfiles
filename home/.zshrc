@@ -91,6 +91,8 @@ setopt interactivecomments
     # IBM docctl
     which docctl >/dev/null 2>&1 && source <(docctl completion zsh)
 
+    # Flatpak
+    source "$HOME/github.com/bilelmoussaoui/flatpak-zsh-completion/flatpak.plugin.zsh"
 #[/Extra completions]
 
 #[History settings]
