@@ -86,7 +86,7 @@ setopt interactivecomments
     source ~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete
 
     # IBM Fyre CLI
-    source <(~/github.ibm.com/Antonio-Gutierrez1/fyre/fyre completion zsh)
+    which fyre >/dev/null 2>&1 && source <(fyre completion zsh)
 
     # IBM docctl
     which docctl >/dev/null 2>&1 && source <(docctl completion zsh)
