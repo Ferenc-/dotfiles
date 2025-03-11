@@ -78,6 +78,9 @@ setopt interactivecomments
       complete -C 'aws_completer' aws
     fi
 
+    ## Trivy
+    which trivy >/dev/null 2>&1 && source <(trivy completion zsh)
+
     ## Tekton CLI tkn
     which tkn >/dev/null 2>&1 && source <(tkn completion zsh)
 
