@@ -58,44 +58,23 @@ setopt interactivecomments
       compdef _homeshick homeshick
     fi
 
-    ## Kubernetes kubectl completion only if it is installed and available
-    ## https://vishh.github.io/docs/user-guide/kubectl/kubectl_completion/
-    which kubectl >/dev/null 2>&1 && source <(kubectl completion zsh)
-
-    ## Helm completion only if it is installed and available
-    ## https://github.com/kubernetes/helm/blob/master/docs/helm/helm_completion.md
-    which helm >/dev/null 2>&1 && source <(helm completion zsh)
-
-    ## Openshift CLI completion
-    which oc >/dev/null 2>&1 && source <(oc completion zsh)
-
-    ## eksctl completion only if it is installed and available
-    which eksctl >/dev/null 2>&1 && source <(eksctl completion zsh)
-
     ## aws completion only if it is installed and available
     if which aws_completer >/dev/null 2>&1; then
       autoload bashcompinit && bashcompinit
       complete -C 'aws_completer' aws
     fi
 
-    ## Trivy
-    which trivy >/dev/null 2>&1 && source <(trivy completion zsh)
-
-    ## Tekton CLI tkn
-    which tkn >/dev/null 2>&1 && source <(tkn completion zsh)
-
     # IBM CLoud CLI
     export PATH="${HOME}/Downloads/Bluemix_CLI/bin:${PATH}"
     source ~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete
 
-    # IBM Fyre CLI
-    which fyre >/dev/null 2>&1 && source <(fyre completion zsh)
-
-    # IBM docctl
-    which docctl >/dev/null 2>&1 && source <(docctl completion zsh)
-
     # Flatpak
     source "$HOME/github.com/bilelmoussaoui/flatpak-zsh-completion/flatpak.plugin.zsh"
+
+    # Tools following the `completion` subcommand pattern
+    for i in docctl eksctl fyre helm kubectl oc tkn trivy; do
+      which "${i}" >/dev/null 2>&1 && source <("${i}" completion zsh)
+    done
 #[/Extra completions]
 
 #[History settings]
