@@ -30,3 +30,5 @@
     sslVerify = true
 [gpg]
     program = gpg2
+[protocol "file"]
+    allow = always
