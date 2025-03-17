@@ -22,6 +22,8 @@
     lol = log --graph --decorate --oneline
 [diff]
     tool = vimdiff
+# https://blog.gitbutler.com/how-git-core-devs-configure-git/
+    algorithm = histogram
 [difftool]
     prompt = false
 [difftool "vimdiff"]
