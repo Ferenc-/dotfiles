@@ -65,8 +65,10 @@ setopt interactivecomments
     fi
 
     # IBM CLoud CLI
-    export PATH="${HOME}/Downloads/Bluemix_CLI/bin:${PATH}"
-    source ~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete
+    if [[ -f "~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete" ]]; then
+      export PATH="${HOME}/Downloads/Bluemix_CLI/bin:${PATH}"
+      source ~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete
+    fi
 
     # Flatpak
     source "$HOME/github.com/bilelmoussaoui/flatpak-zsh-completion/flatpak.plugin.zsh"
