@@ -64,6 +64,11 @@ setopt interactivecomments
       complete -C 'aws_completer' aws
     fi
 
+    # Azure CLI
+    if [[ -f "/usr/share/bash-completion/completions/azure-cli" ]]; then
+      source /usr/share/bash-completion/completions/azure-cli
+    fi
+
     # IBM CLoud CLI
     if [[ -f "~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete" ]]; then
       export PATH="${HOME}/Downloads/Bluemix_CLI/bin:${PATH}"
