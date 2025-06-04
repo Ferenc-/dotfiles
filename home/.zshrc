@@ -104,6 +104,14 @@ setopt interactivecomments
 #[/Zstyle settings]
 
 #[Binutil aliases]
+    #[Bat]
+    if which bat >/dev/null 2>&1; then
+        # Find cmd-help at:
+        # https://github.com/victor-gp/cmd-help-sublime-syntax
+        alias -g -- -h='-h 2>&1 | bat --language=cmd-help --style=full'
+        alias -g -- --help='--help 2>&1 | bat --language=cmd-help --style=full'
+    fi
+    #[/Bat]
     #[H]
         alias h='helm ls -a'
     #[H]
