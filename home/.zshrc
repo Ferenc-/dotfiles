@@ -150,4 +150,4 @@ unsetopt BEEP
 
 nman () { man "$@" | nvim -R +':set ft=man' - ; }
 nyaml () { nvim -R +':set ft=yaml' - ; }
-terminfo () { ssh "${1}" mkdir -p  ~/.terminfo/${TERM:0:1}; scp "/usr/share/terminfo/${TERM:0:1}/${TERM}" "${1}:~/.terminfo/${TERM:0:1}/"}
+terminfo () { ssh "${1}" mkdir -p  "~/.terminfo/${TERM:0:1}"; scp "/usr/share/terminfo/${TERM:0:1}/${TERM}" "${1}:~/.terminfo/${TERM:0:1}/" ; }
