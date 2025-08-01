@@ -106,6 +106,7 @@ setopt interactivecomments
 #[Binutil aliases]
     #[Bat]
     if which bat >/dev/null 2>&1; then
+        alias cat='bat'
         # Find cmd-help at:
         # https://github.com/victor-gp/cmd-help-sublime-syntax
         alias -g -- -h='-h 2>&1 | bat --language=cmd-help --style=full'
