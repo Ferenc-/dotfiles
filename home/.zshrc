@@ -70,9 +70,8 @@ setopt interactivecomments
     fi
 
     # IBM CLoud CLI
-    if [[ -f "~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete" ]]; then
-      export PATH="${HOME}/Downloads/Bluemix_CLI/bin:${PATH}"
-      source ~/Downloads/Bluemix_CLI/autocomplete/zsh_autocomplete
+    if [[ -f "${HOME}/Downloads/IBM_Cloud_CLI/autocomplete/zsh_autocomplete" ]]; then
+      source ~/Downloads/IBM_Cloud_CLI/autocomplete/zsh_autocomplete
     fi
 
     # Flatpak
