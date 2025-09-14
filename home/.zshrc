@@ -125,6 +125,9 @@ setopt interactivecomments
     #[L]
         alias l='ls -lah --color=always'
     #[/L]
+    #[M]
+        alias m='magika'
+    #[/M]
     #[N]
         alias n='nvim'
     #[/N]
