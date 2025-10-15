@@ -17,6 +17,10 @@ setopt interactivecomments
     [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 #[/POWERLEVEL10K]
 
+#[ZSH-COMPLETIONS]
+    source ~/github.com/zsh-users/zsh-completions/zsh-completions.plugin.zsh
+#[/ZSH-COMPLETIONS]
+
 #[ZSH-SYNTAX-HIGHLIGHT]
     source ~/github.com/zsh-users/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 #[/ZSH-SYNTAX-HIGHLIGHT]
