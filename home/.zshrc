@@ -52,6 +52,9 @@ setopt interactivecomments
 #[/VI-Mode]
 
 #[Extra completions]
+    # SW installed with --prefix ~/.local
+    # shellcheck disable=SC2206
+    fpath=(~/.local/share/zsh/site-functions ${fpath})
     autoload -U compinit && compinit
 
     ## homeshick
