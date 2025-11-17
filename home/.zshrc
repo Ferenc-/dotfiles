@@ -162,6 +162,4 @@ nman () { man "$@" | nvim -R +':set ft=man' - ; }
 nyaml () { nvim -R +':set ft=yaml' - ; }
 # shellcheck disable=SC2088
 terminfo () { ssh "${1}" mkdir -p  "~/.terminfo/${TERM:0:1}"; scp "/usr/share/terminfo/${TERM:0:1}/${TERM}" "${1}:~/.terminfo/${TERM:0:1}/" ; }
-fyre-status () { for c in c92600v c92612v; do fyre info cluster -c "${c}" | jq -r '.[].[] | [.node, .state] | join(" ")'; done ; }
-fyre-shutdown () { for c in c92600v c92612v; do fyre shutdown cluster "${c}"; done ; }
 nvidia-regenerate () { sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml ; }
