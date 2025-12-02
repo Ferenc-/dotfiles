@@ -88,6 +88,11 @@ setopt interactivecomments
     for i in argocd docctl eksctl fyre helm kubectl oc tkn trivy; do
       which "${i}" >/dev/null 2>&1 && source <("${i}" completion zsh)
     done
+
+    # ramalama
+    if [[ -f "${HOME}/github.com/containers/ramalama/completions/bash-completion/completions/ramalama" ]]; then
+      source "${HOME}/github.com/containers/ramalama/completions/bash-completion/completions/ramalama"
+    fi
 #[/Extra completions]
 
 #[History settings]
