@@ -108,6 +108,11 @@ setopt interactivecomments
     bindkey " " magic-space
 #[/History settings]
 
+#[Kubernetes settings]
+# kubectl & k9s
+export KUBE_EDITOR="nvim -R +':set ft=yaml'"
+#[/Kubernetes settings]
+
 #[Zstyle settings]
     ## Enable Menu-Style Autocompletion
     ## navigate the suggestions using the arrow keys on the keyboard
