@@ -85,9 +85,10 @@ setopt interactivecomments
     source "$HOME/github.com/bilelmoussaoui/flatpak-zsh-completion/flatpak.plugin.zsh"
 
     # Tools following the `completion` subcommand pattern
-    for i in argocd docctl eksctl fyre helm kubectl oc tkn trivy; do
+    for i in argocd docctl eksctl fyre helm kubectl mermaid-ascii oc tkn trivy; do
       which "${i}" >/dev/null 2>&1 && source <("${i}" completion zsh)
     done
+    compdef _mermaid-ascii mermaid-ascii
 
     # ramalama
     if [[ -f "${HOME}/github.com/containers/ramalama/completions/bash-completion/completions/ramalama" ]]; then
