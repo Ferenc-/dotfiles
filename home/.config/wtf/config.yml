@@ -154,7 +154,7 @@ wtf:
         left: 1
         height: 1
         width: 3
-      refreshInterval: 30s
+      refreshInterval: 1h
     disks:
       type: cmdrunner
       cmd: "df"
