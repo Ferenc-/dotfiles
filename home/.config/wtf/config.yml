@@ -116,6 +116,8 @@ wtf:
       type: security
       title: "🛡️ Firewall & Network security"
       enabled: true
+      colors:
+        subheading: darkgreen
       position:
         top: 1
         left: 2
