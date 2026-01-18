@@ -147,14 +147,14 @@ wtf:
         width: 1
       refreshInterval: 1
     uptime:
-      title: " Golang"
+      title: "⬆️ Updates"
       type: cmdrunner
-      cmd: "checkGoReleases.sh"
+      cmd: "checkVersions.sh"
       enabled: true
       position:
         top: 4
         left: 1
-        height: 1
+        height: 2
         width: 3
       refreshInterval: 1h
     disks:
