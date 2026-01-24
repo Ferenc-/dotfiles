@@ -25,8 +25,8 @@ wtf:
     # You can have multiple widgets of the same type.
     # The "key" is the name of the widget and the type is the actual
     # widget you want to implement.
-    europe_time:
-      title: "Europe"
+    relevant_timezones:
+      title: "🕐 Time"
       type: clocks
       colors:
         rows:
@@ -34,45 +34,19 @@ wtf:
           odd: "white"
       enabled: true
       locations:
+        Ehningen: "Europe/Berlin"
+        Austin: "America/Chicago"
+        Boston: "America/New_York"
+        Kochi: "Asia/Kolkata"
+        Toronto: "America/Toronto"
         GMT: "Etc/GMT"
-        Amsterdam: "Europe/Amsterdam"
-        Berlin: "Europe/Berlin"
-        Barcelona: "Europe/Madrid"
-        Copenhagen: "Europe/Copenhagen"
-        London: "Europe/London"
-        Rome: "Europe/Rome"
-        Stockholm: "Europe/Stockholm"
       position:
         top: 0
         left: 0
         height: 1
         width: 1
       refreshInterval: 15
-      sort: "alphabetical"
-    americas_time:
-      title: "Americas"
-      type: clocks
-      colors:
-        rows:
-          even: "lightblue"
-          odd: "white"
-      enabled: true
-      locations:
-        UTC: "Etc/UTC"
-        Vancouver: "America/Vancouver"
-        New_York: "America/New_York"
-        Sao_Paolo: "America/Sao_Paulo"
-        Denver: "America/Denver"
-        Iqaluit: "America/Iqaluit"
-        Bahamas: "America/Nassau"
-        Chicago: "America/Chicago"
-      position:
-        top: 0
-        left: 1
-        height: 1
-        width: 1
-      refreshInterval: 15
-      sort: "alphabetical"
+      sort: "reversechronological"
     battery:
       type: power
       title: "⚡️"
