@@ -6,7 +6,7 @@ wtf:
       focused: orange
       normal: gray
     checked: yellow
-    highlight: 
+    highlight:
       fore: black
       back: gray
     rows:
@@ -34,9 +34,11 @@ wtf:
           odd: "white"
       enabled: true
       locations:
-        Ehningen: "Europe/Berlin"
+        # From https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+        Atlanta: "America/New_York"
         Austin: "America/Chicago"
         Boston: "America/New_York"
+        Ehningen: "Europe/Berlin"
         Kochi: "Asia/Kolkata"
         Toronto: "America/Toronto"
         GMT: "Etc/GMT"
