@@ -38,6 +38,7 @@ wtf:
         Atlanta: "America/New_York"
         Austin: "America/Chicago"
         Boston: "America/New_York"
+        Cork: "Europe/Dublin"
         Ehningen: "Europe/Berlin"
         Kochi: "Asia/Kolkata"
         Toronto: "America/Toronto"
