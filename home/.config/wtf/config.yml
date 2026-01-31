@@ -41,7 +41,7 @@ wtf:
         Cork: "Europe/Dublin"
         Ehningen: "Europe/Berlin"
         Kochi: "Asia/Kolkata"
-        Toronto: "America/Toronto"
+        Markham: "America/Toronto"
         GMT: "Etc/GMT"
       position:
         top: 0
