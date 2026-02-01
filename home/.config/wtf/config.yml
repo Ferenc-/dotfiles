@@ -18,7 +18,7 @@ wtf:
     columns: [35, 35, 35, 35, 60]
     # How _high_ the rows are, in terminal lines. In this case we have four rows
     # that support ten line of text and one of four.
-    rows: [10, 10, 10, 10, 4, 30]
+    rows: [11, 10, 10, 10, 4, 30]
   refreshInterval: 1
   openFileUtil: "open"
   mods:
@@ -42,6 +42,7 @@ wtf:
         Ehningen: "Europe/Berlin"
         Kochi: "Asia/Kolkata"
         Markham: "America/Toronto"
+        San_Jose: "America/Los_Angeles"
         GMT: "Etc/GMT"
       position:
         top: 0
