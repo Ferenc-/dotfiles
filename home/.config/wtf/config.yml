@@ -136,13 +136,14 @@ wtf:
         width: 3
       refreshInterval: 1h
     disks:
+      title: "📂 💽"
       type: cmdrunner
-      cmd: "df"
-      args: ["-h"]
+      cmd: "sdf"
+      #args: ["-h"]
       enabled: true
       position:
         top: 3
         left: 1
         height: 1
-        width: 3
+        width: 1
       refreshInterval: 3600
