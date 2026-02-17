@@ -85,7 +85,7 @@ setopt interactivecomments
     source "$HOME/github.com/bilelmoussaoui/flatpak-zsh-completion/flatpak.plugin.zsh"
 
     # Tools following the `completion` subcommand pattern
-    for i in argocd cilium docctl eksctl fyre helm k9s kubectl mermaid-ascii oc tkn trivy; do
+    for i in argocd cilium docctl eksctl fyre helm hubble k9s kubectl mermaid-ascii oc tkn trivy; do
       which "${i}" >/dev/null 2>&1 && source <("${i}" completion zsh)
     done
     compdef _mermaid-ascii mermaid-ascii
