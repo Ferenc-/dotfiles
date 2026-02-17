@@ -53,7 +53,7 @@ wtf:
       sort: "reversechronological"
     battery:
       type: power
-      title: "⚡️"
+      title: "⚡️ 🔋"
       enabled: true
       position:
         top: 1
@@ -79,16 +79,16 @@ wtf:
     refreshInterval: 3600
     ip:
       type: ipinfo
-      title: "My IP"
+      title: "🌐 IP"
       colors:
         name: "lightblue"
         value: "white"
       enabled: true
       position:
-        top: 0
-        left: 2
+        top: 2
+        left: 3
         height: 1
-        width: 2
+        width: 1
       refreshInterval: 150
     security_info:
       type: security
