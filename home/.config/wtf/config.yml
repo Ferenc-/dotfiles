@@ -51,6 +51,17 @@ wtf:
         width: 1
       refreshInterval: 15
       sort: "reversechronological"
+    jira_board:
+      type: cmdrunner
+      title: "🔷 Jira"
+      cmd: "jiraScript.sh"
+      enabled: true
+      refreshInterval: 15m
+      position:
+        top: 0
+        left: 1
+        height: 1
+        width: 3
     battery:
       type: power
       title: "⚡️ 🔋"
