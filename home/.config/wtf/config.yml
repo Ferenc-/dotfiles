@@ -124,19 +124,19 @@ wtf:
         height: 2
         width: 1
       refreshInterval: 3600
-  # readme:
-  #   type: textfile
-  #   enabled: true
-  #   filePaths:
-  #     - "~/.config/wtf/config.yml"
-  #   format: true
-  #   formatStyle: "monokai"
-  #   position:
-  #     top: 1
-  #     left: 1
-  #     height: 1
-  #     width: 1
-  #   refreshInterval: 15
+    readme:
+      type: textfile
+      enabled: true
+      filePaths:
+        - "~/Documents/EM-1:1-notes.txt"
+      format: true
+      formatStyle: "monokai"
+      position:
+        top: 1
+        left: 1
+        height: 2
+        width: 1
+      refreshInterval: 15
     resources:
       type: resourceusage
       enabled: true
