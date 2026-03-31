@@ -113,11 +113,10 @@ wtf:
         width: 1
       refreshInterval: 150
     security_info:
-      type: security
       title: "🛡️ Firewall & Network security"
+      type: cmdrunner
+      cmd: "checkFirewallAndNetworkSecurity"
       enabled: true
-      colors:
-        subheading: darkgreen
       position:
         top: 1
         left: 2
