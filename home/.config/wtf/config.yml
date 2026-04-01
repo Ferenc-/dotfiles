@@ -122,7 +122,7 @@ wtf:
         left: 2
         height: 2
         width: 1
-      refreshInterval: 3600
+      refreshInterval: 30s
     readme:
       type: textfile
       enabled: true
