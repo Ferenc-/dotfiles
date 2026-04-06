@@ -73,6 +73,17 @@ wtf:
         left: 4
         height: 1
         width: 2
+    gh:
+      type: cmdrunner
+      title: "GH"
+      cmd: "ghScript.sh"
+      enabled: true
+      refreshInterval: 15m
+      position:
+        top: 1
+        left: 4
+        height: 1
+        width: 2
     battery:
       type: power
       title: "⚡️ 🔋"
