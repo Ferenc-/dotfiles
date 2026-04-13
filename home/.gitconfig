@@ -20,6 +20,8 @@
     show-difftool = "!sh -c 'git difftool $1^ $1 --' -"
     foo = !git show-difftool
     lol = log --graph --decorate --oneline
+    object-format = rev-parse --show-object-format
+    hashing-algorithm = object-format
 [diff]
     tool = vimdiff
 # https://blog.gitbutler.com/how-git-core-devs-configure-git/
