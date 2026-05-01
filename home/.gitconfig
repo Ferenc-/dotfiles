@@ -20,6 +20,7 @@
     show-difftool = "!sh -c 'git difftool $1^ $1 --' -"
     foo = !git show-difftool
     lol = log --graph --decorate --oneline
+    dob = !git branch -D `git branch -vv | awk '/: gone/{print $1}'`
     object-format = rev-parse --show-object-format
     hashing-algorithm = object-format
 [diff]
