@@ -139,6 +139,7 @@ export KUBE_EDITOR="nvim -R +':set ft=yaml'"
     #[K]
         alias k='kubectl'
         compdef _kubectl k
+        alias ke='n ${KUBECONFIG:-${HOME}/.kube/config}'
     #[/K]
     #[L]
         alias l='ls -lah --color=always'
