@@ -170,6 +170,7 @@ unsetopt HIST_BEEP
 unsetopt BEEP
 
 nman () { man "$@" | nvim -R +':set ft=man' - ; }
+compdef _man nman
 nyaml () { nvim -R +':set ft=yaml' - ; }
 # shellcheck disable=SC2088
 terminfo () { ssh "${1}" mkdir -p  "~/.terminfo/${TERM:0:1}"; scp "/usr/share/terminfo/${TERM:0:1}/${TERM}" "${1}:~/.terminfo/${TERM:0:1}/" ; }
