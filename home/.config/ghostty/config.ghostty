@@ -1,0 +1,16 @@
+# Ghostty Terminal Configuration
+
+# Audio Bell
+# Disabled by default:
+# https://ghostty.org/docs/config/reference#bell-features
+
+# Font
+# `ghostty +list-fonts`
+font-family = MesloLGS Nerd Font
+# Why LGLDZ isn't available?
+# font-family = MesloLGLDZ Nerd Font Mono
+
+# Theme
+# ghostty +list-themes
+# Is there even higher contrast?
+theme = GitHub Dark High Contrast
