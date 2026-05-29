@@ -173,10 +173,7 @@ unsetopt BEEP
 nman() { man "$@" | nvim -R +':set ft=man' - ; }
 compdef _man nman
 nyaml() { nvim -R +':set ft=yaml' - ; }
+# See https://ghostty.org/docs/help/terminfo#ssh
 # shellcheck disable=SC2088
-terminfo() {
-    infocmp -x "${TERM}" >/tmp/"${TERM}"
-    ssh "${1}" mkdir -p "~/.terminfo/${TERM:0:1}"
-    scp /tmp/"${TERM}" "${1}:~/.terminfo/${TERM:0:1}/"
-}
+terminfo() { infocmp -x "${TERM}" | ssh "${1}" -- tic -x - }
 nvidia-regenerate() { sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml; }
