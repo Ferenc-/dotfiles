@@ -170,9 +170,13 @@ unsetopt HIST_BEEP
 # Turn off all beeps
 unsetopt BEEP
 
-nman () { man "$@" | nvim -R +':set ft=man' - ; }
+nman() { man "$@" | nvim -R +':set ft=man' - ; }
 compdef _man nman
-nyaml () { nvim -R +':set ft=yaml' - ; }
+nyaml() { nvim -R +':set ft=yaml' - ; }
 # shellcheck disable=SC2088
-terminfo () { ssh "${1}" mkdir -p  "~/.terminfo/${TERM:0:1}"; scp "/usr/share/terminfo/${TERM:0:1}/${TERM}" "${1}:~/.terminfo/${TERM:0:1}/" ; }
-nvidia-regenerate () { sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml ; }
+terminfo() {
+    infocmp -x "${TERM}" >/tmp/"${TERM}"
+    ssh "${1}" mkdir -p "~/.terminfo/${TERM:0:1}"
+    scp /tmp/"${TERM}" "${1}:~/.terminfo/${TERM:0:1}/"
+}
+nvidia-regenerate() { sudo nvidia-ctk cdi generate --output=/etc/cdi/nvidia.yaml; }
