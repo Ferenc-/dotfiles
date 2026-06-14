@@ -118,6 +118,8 @@ export KUBE_EDITOR="nvim -R +':set ft=yaml'"
     ## Enable Menu-Style Autocompletion
     ## navigate the suggestions using the arrow keys on the keyboard
     zstyle ':completion:*' menu select
+    bindkey '^I' menu-complete           # Tab
+    bindkey '^[[Z' reverse-menu-complete # Shift-Tab in many terminals (escape-sequence binding)
 #[/Zstyle settings]
 
 #[Binutil aliases]
