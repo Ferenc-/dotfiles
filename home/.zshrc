@@ -132,6 +132,9 @@ export KUBE_EDITOR="nvim -R +':set ft=yaml'"
         alias -g -- --help='--help 2>&1 | bat --language=cmd-help --style=full'
     fi
     #[/Bat]
+    #[Flatpak]
+        alias flatpakFullUpdate='flatpak --user update --no-static-deltas'
+    #[/Flatpak]
     #[H]
         alias h='helm ls -a'
     #[H]
